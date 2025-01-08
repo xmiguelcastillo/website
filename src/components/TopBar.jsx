@@ -2,7 +2,7 @@ import React from "react";
 
 function TopBar() {
   return (
-    <div className="lg:w-[500px] sm:w-[440px] font-light rounded-lg shadow shadow-black bg-[#111111] border-[1px] border-[#222224]">
+    <div className="lg:w-[500px] sm:w-[420px] font-light rounded-lg shadow shadow-black bg-[#111111] border-[1px] border-[#222224]">
       <div className="flex justify-center pt-2 text-xl text-white items-center  w-full h-2/5">
         <div>Miguel Castillo</div>
       </div>
