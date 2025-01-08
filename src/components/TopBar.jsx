@@ -14,7 +14,7 @@ function TopBar() {
         xmiguelcastillo@gmail.com
       </div>
       <div className="flex justify-center  mb-2 items-center text-xs text-[#757a83]  w-full h-1/5">
-        Bachelor of Computer Science from Rutgers, New Brunswick
+        Bachelor of Computer Science from Rutgers University, New Brunswick
       </div>
     </div>
   );

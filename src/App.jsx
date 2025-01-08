@@ -7,21 +7,26 @@ import CppDisplay from "./components/Languages/CppDisplay";
 import CsharpDisplay from "./components/Languages/CsharpDisplay";
 function App() {
   return (
-    <div className="flex flex-col items-center bg-[#101010] h-full ">
-      <HeadingBar />
-      <TopBar />
+    <div className="flex flex-col items-center bg-[#101010] min-h-screen px-4">
+      {/* Header Section */}
+      <header className="w-full flex flex-col items-center justify-center">
+        <HeadingBar />
+        <TopBar />
+      </header>
 
-      <Link className="" to="/python">
-        <PythonDisplay />
-      </Link>
+      <main className="flex flex-col items-center w-full ">
+        <Link to="/python" aria-label="Go to Python page">
+          <PythonDisplay />
+        </Link>
 
-      <Link className="" to="/cpp">
-        <CppDisplay />
-      </Link>
+        <Link to="/cpp" aria-label="Go to C++ page">
+          <CppDisplay />
+        </Link>
 
-      <Link className="" to="/csharp">
-        <CsharpDisplay />
-      </Link>
+        <Link to="/csharp" aria-label="Go to C# page">
+          <CsharpDisplay />
+        </Link>
+      </main>
     </div>
   );
 }

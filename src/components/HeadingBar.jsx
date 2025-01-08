@@ -18,7 +18,7 @@ function HeadingBar() {
       </Link>
 
       <Link
-        to="/"
+        to="/website"
         className="text-white flex justify-center items-center w-1/5 hover:text-[#6373ff]"
       >
         Projects
