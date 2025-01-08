@@ -17,7 +17,7 @@ import AstarPage from "./routes/PythonProjects/Astar/AstarPage";
 import SnakePage from "./routes/PythonProjects/Snake/SnakePage";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/website",
     element: <App />,
   },
   {
@@ -68,6 +68,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    return <RouterProvider router={router} basename="/website" />;
+    <RouterProvider router={router} basename="/website" />;
   </StrictMode>,
 );
