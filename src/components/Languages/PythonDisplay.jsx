@@ -10,7 +10,7 @@ function PythonDisplay() {
     <div>
       <div className="text-white flex justify-center mt-3">Python Projects</div>
       <div
-        className="h-[350px] w-[500px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
+        className="h-[350px] lg:w-[500px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
         style={{
           backgroundImage: `url(${mundoWorldGif})`,
           backgroundSize: "cover",
