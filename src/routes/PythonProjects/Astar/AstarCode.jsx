@@ -804,7 +804,7 @@ if __name__ == "__main__":
   };
 
   return (
-    <div className="mt-6 lg:w-[600px] sm:w-[400px]">
+    <div className="mt-6 w-[400px] lg:w-[600px] sm:w-[400px]">
       {/* Tabs */}
       <div className="flex space-x-4 mb-4">
         {codeSnippets.map((snippet, index) => (
