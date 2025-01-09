@@ -51,7 +51,7 @@ function Contact() {
     <div className="flex flex-col items-center bg-[#101010] h-full ">
       <HeadingBar />
       <TopBar />
-      <div className="max-w-xl w-[470px] mt-10 mx-auto p-6 bg-[#111111] border border-[#00ffd7] rounded-md">
+      <div className="max-w-xl w-[400px] lg:w-[470px] sm:w-[400px] mt-10 mx-auto p-6 bg-[#111111] border border-[#00ffd7] rounded-md">
         <h2 className="text-2xl font-medium text-center text-white mb-6">
           Contact Me
         </h2>
