@@ -17,7 +17,7 @@ import AstarPage from "./routes/PythonProjects/Astar/AstarPage";
 import SnakePage from "./routes/PythonProjects/Snake/SnakePage";
 const router = createBrowserRouter([
   {
-    path: "/website",
+    path: "/",
     element: <App />,
   },
   {
