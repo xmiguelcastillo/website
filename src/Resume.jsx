@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import HeadingBar from "./components/HeadingBar";
 
 function PDFViewer() {
-  const pdfUrl = "/Miguel.pdf";
+  const pdfUrl = "Miguel.pdf";
 
   return (
     <div className="flex flex-col items-center bg-[#101010] h-full min-h-screen">
