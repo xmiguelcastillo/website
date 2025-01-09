@@ -11,7 +11,7 @@ function CsharpDisplay() {
     <div>
       <div className="text-white flex justify-center mt-3">C# Projects</div>
       <div
-        className="h-[350px] lg:w-[500px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
+        className="lg:h-[350px] lg:w-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
         style={{
           backgroundImage: `url(${mundoWorldGif})`,
           backgroundSize: "cover",

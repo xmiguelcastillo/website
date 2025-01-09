@@ -9,7 +9,7 @@ function SnakeBox() {
         Snake Game with Pygame
       </div>
       <div
-        className="h-[350px] w-[500px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
+        className="lg:h-[350px] lg:w-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
         style={{
           backgroundImage: `url(${mundoWorldGif})`,
           backgroundSize: "cover",

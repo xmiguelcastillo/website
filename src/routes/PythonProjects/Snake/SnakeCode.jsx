@@ -256,7 +256,7 @@ quit()
   };
 
   return (
-    <div className="mt-6 w-[600px]">
+    <div className="mt-6 lg:w-[600px] sm:w-[400px]">
       {/* Tabs */}
       <div className="flex space-x-4 mb-4">
         {codeSnippets.map((snippet, index) => (

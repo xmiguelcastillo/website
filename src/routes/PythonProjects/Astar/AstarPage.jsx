@@ -14,7 +14,7 @@ function AstarPage() {
         Fast Trajectory Replanning & A*
       </div>
       <div
-        className="h-[500px] w-[600px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
+        className=" lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
         style={{
           backgroundImage: `url(${mundoWorldVidGif})`,
           backgroundSize: "cover",
