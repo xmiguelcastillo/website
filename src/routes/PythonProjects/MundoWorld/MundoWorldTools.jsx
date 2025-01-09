@@ -30,8 +30,9 @@ function MundoWorldTools() {
         <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
           <JavascriptIcon />
         </div>
-        <div className="w-2/3 flex font-normal justify-center text-[15px] mr-2 items-center h-full">
-          Javascript
+        <div className="w-2/3 flex font-normal justify-center text-[15px] sm:text-[12px] md:text-[12px] lg:text-[15px] mr-2 items-center h-full">
+          <span className="hidden sm:inline">JavaScript</span>
+          <span className="inline sm:hidden">JS</span>
         </div>
       </div>
 
