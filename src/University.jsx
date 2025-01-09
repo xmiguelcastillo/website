@@ -15,12 +15,12 @@ import SqlClasses from "./components/SqlClasses";
 import RutgersIcon from "./assets/rutgersvg";
 function University() {
   return (
-    <div className="flex flex-col items-center bg-[#101010] h-full ">
+    <div className="flex flex-col items-center   bg-[#101010] h-full ">
       <HeadingBar />
 
       <TopBar />
 
-      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-[500px] h-14 text-xs mx-2">
+      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-[400px] lg:w-[500px] sm:w-[400px] h-14 text-xs mx-2">
         <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
           <RutgersIcon />
         </div>

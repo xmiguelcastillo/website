@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="flex flex-col items-center bg-[#101010] min-h-screen px-4">
       {/* Header Section */}
+
       <header className="w-full flex flex-col items-center justify-center">
         <HeadingBar />
         <TopBar />

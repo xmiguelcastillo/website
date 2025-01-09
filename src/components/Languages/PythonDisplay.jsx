@@ -5,6 +5,7 @@ import mundoWorldGif from "../../routes/assets/mundoworld.gif";
 import JavascriptIcon from "../../assets/javascriptsvg";
 import ReactIcon from "../../assets/reactsvg";
 
+
 function PythonDisplay() {
   return (
     <div>

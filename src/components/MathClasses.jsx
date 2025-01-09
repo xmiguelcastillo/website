@@ -3,7 +3,7 @@ import MathIcon from "../assets/mathsvg";
 
 function MathClasses() {
   return (
-    <div className="flex flex-row flex-wrap w-full max-w-[520px] mx-auto">
+    <div className="flex flex-row flex-wrap w-[400px] lg:w-[500px] sm:w-[400px] mx-auto">
       <div className="w-1/2 p-2">
         <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-full h-24 text-xs mx-2 group hover:border-[#e02089]">
           <div className="w-1/3 flex justify-center text-black items-center bg-[#111111] rounded-l-md">
