@@ -7,13 +7,11 @@ import CppDisplay from "./components/Languages/CppDisplay";
 import CsharpDisplay from "./components/Languages/CsharpDisplay";
 function App() {
   return (
-    <div className="flex flex-col items-center bg-[#101010] min-h-screen px-4">
+    <div className="flex flex-col items-center bg-[#101010] min-h-screen ">
       {/* Header Section */}
 
-      <header className="w-full flex flex-col items-center justify-center">
-        <HeadingBar />
-        <TopBar />
-      </header>
+      <HeadingBar />
+      <TopBar />
 
       <main className="flex flex-col items-center w-full ">
         <Link to="/python" aria-label="Go to Python page">

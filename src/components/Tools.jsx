@@ -13,8 +13,8 @@ import HtmlIcon from "../assets/htmlsvg";
 import CssIcon from "../assets/csssvg";
 function Tools() {
   return (
-    <div className="flex flex-wrap justify-center  lg:w-[600px] sm:w-[500px] mx-auto">
-      <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+    <div className="flex flex-wrap justify-center lg:w-[600px] md:w-[500px] sm:w-[100px] mx-auto">
+      <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28  h-9 text-xs mx-2">
         <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
           <PythonIcon />
         </div>
@@ -23,7 +23,7 @@ function Tools() {
         </div>
       </div>
 
-      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white mx-6  lg:mx-2 bg-[#111111] w-28 h-9 text-xs ">
         <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
           <DjangoIcon />
         </div>
@@ -50,7 +50,7 @@ function Tools() {
         </div>
       </div>
 
-      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white mx-6  lg:mx-2 bg-[#111111] w-28 h-9 text-xs ">
         <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
           <CppIcon />
         </div>
@@ -77,7 +77,7 @@ function Tools() {
         </div>
       </div>
 
-      <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white mx-6  lg:mx-2 bg-[#111111] w-28 h-9 text-xs ">
         <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
           <JavascriptIcon />
         </div>
@@ -104,7 +104,7 @@ function Tools() {
         </div>
       </div>
 
-      <div className="border-[.05px] rounded-md border-[#3d3d42] shadow-white mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white mx-6  lg:mx-2 bg-[#111111] w-28 h-9 text-xs ">
         <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
           <CssIcon />
         </div>
