@@ -18,13 +18,16 @@ function App() {
           <PythonDisplay />
         </Link>
 
+        {/*
         <Link to="/cpp" aria-label="Go to C++ page">
           <CppDisplay />
         </Link>
-
+        */}
+        {/*
         <Link to="/csharp" aria-label="Go to C# page">
           <CsharpDisplay />
         </Link>
+        */}
       </main>
     </div>
   );
