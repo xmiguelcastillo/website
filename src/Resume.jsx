@@ -1,21 +1,17 @@
 import { useEffect, useRef } from "react";
 import HeadingBar from "./components/HeadingBar";
-
 function PDFViewer() {
   const pdfUrl = "Miguel.pdf";
 
   return (
-    <div className="flex flex-col items-center bg-[#101010] min-h-screen">
+    <div className="flex flex-col  items-center  min-h-screen">
       <HeadingBar />
-      <div className="flex justify-center w-[100%] max-w-[500px] p-4">
-        <iframe
-          className="bg-[#00ffd7] border border-white rounded-md 
-                 w-[100%] h-[130vh] sm:w-[90%] sm:h-[70vh] 
-                 md:w-[400px] md:h-[600px] lg:w-[500px] lg:h-[700px]"
-          src={pdfUrl}
-          title="PDF Viewer"
-        />
-      </div>
+      <iframe
+        style={{ display: "block" }}
+        className="scale-[70%] lg:scale-[100%] lg:w-[600px] w-[600px] h-[800px] md:-mt-1 sm:-mt-1 -mt-32"
+        src={pdfUrl}
+        title="PDF Viewer"
+      />
     </div>
   );
 }

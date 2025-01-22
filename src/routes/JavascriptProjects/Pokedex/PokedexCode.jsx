@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/base16/brewer.css";
 
-function MundoWorldCode() {
+function PokedexCode() {
   const [activeTab, setActiveTab] = useState(0);
 
   const codeSnippets = [
@@ -323,4 +323,4 @@ export default ResultBox;
   );
 }
 
-export default MundoWorldCode;
+export default PokedexCode;

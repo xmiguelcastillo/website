@@ -349,7 +349,7 @@ print("Neural Network Prediction Error Standard Deviation:", np.std(nn_errors))
   ];
 
   useEffect(() => {
-    hljs.highlightAll(); // Apply syntax highlighting
+    hljs.highlightAll();
   }, [activeTab]);
 
   const copyToClipboard = (code) => {

@@ -51,7 +51,7 @@ function Contact() {
     <div className="flex flex-col items-center bg-[#101010] h-full ">
       <HeadingBar />
       <TopBar />
-      <div className="max-w-xl w-[400px] lg:w-[470px] sm:w-[400px] mt-10 mx-auto p-6 bg-[#111111] border border-[#00ffd7] rounded-md">
+      <div className="max-w-xl w-[400px] h-500px lg:w-[470px] sm:w-[400px] mt-10 mx-auto p-6 bg-[#111111] border border-[#00ffd7] rounded-md">
         <h2 className="text-2xl font-medium text-center text-white mb-6">
           Contact Me
         </h2>
@@ -138,7 +138,7 @@ function Contact() {
             type="submit"
             className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
-            Submit Form
+            Send Message
           </button>
         </form>
       </div>

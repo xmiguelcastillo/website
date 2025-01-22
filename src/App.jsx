@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 import PythonDisplay from "./components/Languages/PythonDisplay";
 import CppDisplay from "./components/Languages/CppDisplay";
 import CsharpDisplay from "./components/Languages/CsharpDisplay";
+import JavascriptDisplay from "./components/Languages/JavascriptDisplay";
 function App() {
   return (
-    <div className="flex flex-col items-center bg-[#101010] min-h-screen ">
-      {/* Header Section */}
-
+    <div className="flex flex-col items-center bg-[#111111] min-h-screen ">
       <HeadingBar />
       <TopBar />
 
@@ -18,6 +17,9 @@ function App() {
           <PythonDisplay />
         </Link>
 
+        <Link to="/javascript" aria-label="Go to Javascript page">
+          <JavascriptDisplay />
+        </Link>
         {/*
         <Link to="/cpp" aria-label="Go to C++ page">
           <CppDisplay />

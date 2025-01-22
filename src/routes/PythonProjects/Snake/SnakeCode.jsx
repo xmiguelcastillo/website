@@ -246,7 +246,7 @@ quit()
   ];
 
   useEffect(() => {
-    hljs.highlightAll(); // Apply syntax highlighting
+    hljs.highlightAll();
   }, [activeTab]);
 
   const copyToClipboard = (code) => {
