@@ -14,6 +14,18 @@ import {
 import pokedex from "../../routes/assets/pokedex.png";
 
 function JavascriptDisplay() {
+  const typeColors = {
+    Fire: "#FF5733",
+    Water: "#1b3e66",
+    Grass: "#4CAF50",
+    Electric: "#FFD700",
+    Bug: "#afb71f",
+    Normal: "#c0bdb6",
+    Psychic: "#f02c96",
+    Fighting: "#8e3605",
+    default: "#1b3e66",
+  };
+  const backGround = typeColors[1] || typeColors.default;
   return (
     <div>
       <div className="text-white flex justify-center mt-3">
@@ -27,7 +39,7 @@ function JavascriptDisplay() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="w-full h-3/5 rounded-lg flex justify-center items-center">
+        <div className="w-full  h-3/5 rounded-lg flex justify-center items-center">
           <Canvas shadows camera={{ position: [80, 1, 1] }}>
             <Environment preset="city" />
             <PerspectiveCamera
