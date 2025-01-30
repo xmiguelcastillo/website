@@ -42,7 +42,7 @@ export default function PokedexBox() {
         <div className="w-full h-3/5 rounded-lg flex justify-center items-center">
           {/* Radial Background Effect */}
           <div
-            className="w-[300px] h-[50px] sm:w-[100px] sm:h-[50px] md:w-[150px] md:h-[80px]  lg:w-[260px]  lg:h-[150px]  rounded-full absolute lg:top-[30%] top-[29%] left-[50%] md:top-[28%] sm:top-[30%] translate-x-[-50%] z-0 translate-y-[-50%] blur-[50px]  pointer-events-none transition-all duration-1000"
+            className="w-[300px] h-[50px] sm:w-[100px] sm:h-[50px] md:w-[150px] md:h-[80px]  lg:w-[260px]  lg:h-[150px]  rounded-full absolute lg:top-[30%] top-[37%] left-[50%] md:top-[28%] sm:top-[30%] translate-x-[-50%] z-0 translate-y-[-50%] blur-[50px]  pointer-events-none transition-all duration-1000"
             style={{
               background: `radial-gradient(circle at center, ${background} 0%, transparent 100%)`,
             }}

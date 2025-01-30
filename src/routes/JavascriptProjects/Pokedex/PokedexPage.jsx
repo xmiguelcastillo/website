@@ -20,7 +20,7 @@ function PokedexPage() {
         rel="noopener noreferrer"
       >
         <div
-          className="w-[400px] h-[300px] lg:w-[600px] hover:shadow-white lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224] cursor-pointer"
+          className="w-[400px] h-[300px] lg:w-[600px] hover:shadow-black lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224] cursor-pointer"
           style={{
             backgroundImage: `url(${pokedex})`,
             backgroundSize: "cover",
