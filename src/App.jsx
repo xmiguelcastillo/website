@@ -17,14 +17,9 @@ function App() {
           <PythonDisplay />
         </Link>
 
-        <a
-          href="https://xmiguelcastillo.github.io/pokedex/bulbasaur"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Go to Javascript page"
-        >
+        <Link to="/javascript" aria-label="Go to Javascript Page">
           <JavascriptDisplay />
-        </a>
+        </Link>
         {/*
         <Link to="/cpp" aria-label="Go to C++ page">
           <CppDisplay />
