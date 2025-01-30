@@ -56,24 +56,6 @@ function Contact() {
           Contact Me
         </h2>
 
-        <div className="Section 2 mt-4">
-          <Canvas shadows camera={{ position: [100, 30, 1.66] }}>
-            <Environment preset="city" />
-            <Model
-              position={[60, -4, 0]}
-              rotation={[0, -Math.PI / 2, 0]}
-              castShadow
-              receiveShadow
-            />
-            <ContactShadows
-              position={[0, -0.8, 0]}
-              color="#ffffff"
-              opacity={1.3}
-              blur={1}
-            />
-            <OrbitControls enableZoom={true} autoRotate={false} />
-          </Canvas>
-        </div>
         {formStatus && (
           <div
             className={`p-4 mb-4 rounded-md text-center ${formStatus.success

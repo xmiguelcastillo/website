@@ -35,7 +35,7 @@ function JavascriptDisplay() {
         <div className="relative w-full h-3/5 flex justify-center items-center">
           {/* Radial Background Effect behind everything */}
           <div
-            className="absolute   mt-[90px] flex items-center justify-center w-[290px] h-[100px] pointer-events-none"
+            className="absolute   mt-[90px] flex items-center justify-center w-[200px] h-[100px] pointer-events-none"
             style={{
               background: `radial-gradient(circle at center, ${background} 0%, transparent 100%)`,
               filter: "blur(70px)",
