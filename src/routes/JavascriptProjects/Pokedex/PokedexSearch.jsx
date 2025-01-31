@@ -18,11 +18,11 @@ export default function PokedexSearch() {
           placeholder="Search Pokémon(Gen 1) Mew, Gengar"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="px-4 py-2 text-white bg-[#0c0d0e] border-[1px] border-[#FFFFFF] w-[800px]  rounded-lg focus:outline-none focus:ring-2 focus:ring-[#dc143c]"
+          className="px-4 py-2 text-white bg-[#0c0d0e] border-[1px] border-[#3d3c43] w-[800px]  rounded-lg focus:outline-none focus:ring-2 focus:ring-[#dc143c]"
         />
         <button
           type="submit"
-          className=" bg-[#dc1434] border-[1px] h-10 w-16 lg:w-32 text-white rounded-lg hover:bg-[#242424] transition"
+          className=" bg-[#dc1434] border-[1px] border-[#3d3c43] h-10 w-16 lg:w-32 text-white rounded-lg hover:bg-[#242424] transition"
         >
           Search
         </button>
