@@ -13,7 +13,7 @@ function TopBar() {
       <div className="flex justify-center  items-center text-xs text-[#757a83]  w-full h-1/5">
         xmiguelcastillo@gmail.com
       </div>
-      <div className="flex justify-center  mb-2 items-center text-[12px] text-[#757a83]  w-full h-1/5">
+      <div className="flex justify-center  mb-2 items-center text-[10px] text-[#757a83]  w-full h-1/5">
         Bachelor of Computer Science from Rutgers University, New Brunswick
       </div>
     </div>
