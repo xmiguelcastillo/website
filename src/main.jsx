@@ -19,7 +19,9 @@ import FaceDetectionPage from "./routes/PythonProjects/FaceDetection/FaceDetecti
 import AstarPage from "./routes/PythonProjects/Astar/AstarPage";
 import SnakePage from "./routes/PythonProjects/Snake/SnakePage";
 
+import NextPage from "./routes/JavascriptProjects/Next/NextPage";
 import PokedexPage from "./routes/JavascriptProjects/Pokedex/PokedexPage";
+import SnakeGamePage from "./routes/JavascriptProjects/SnakeGame/SnakeGamePage";
 function RootLayout() {
   return (
     <>
@@ -42,6 +44,8 @@ const router = createBrowserRouter([
       { path: "/python", element: <PythonProjects /> },
       { path: "/javascript", element: <JavascriptProjects /> },
       { path: "/javascript/pokedex", element: <PokedexPage /> },
+      { path: "/javascript/snake", element: <SnakeGamePage /> },
+      { path: "/javascript/next", element: <NextPage /> },
       { path: "/cpp", element: <CppProjects /> },
       { path: "/csharp", element: <CsharpProjects /> },
       { path: "/python/mundoworld", element: <MundoWorldPage /> },

@@ -14,7 +14,7 @@ import {
   PerspectiveCamera,
 } from "@react-three/drei";
 
-export default function PokedexBox() {
+export default function SnakeGameBox() {
   const [loading, setLoading] = useState(false);
 
   const typeColors = {
@@ -28,7 +28,7 @@ export default function PokedexBox() {
 
   return (
     <div>
-      <div className="text-white flex justify-center mt-3">Pokémon Pokédex</div>
+      <div className="text-white flex justify-center mt-3">Snake Game</div>
       <div className="relative h-[300px] w-[400px] sm:h-[300px] sm:w-[400px] lg:h-[350px] lg:w-[500px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224] overflow-hidden">
         {/* 3D Model Container */}
         <div className="relative w-full h-3/5 flex justify-center items-center">
