@@ -1,16 +1,20 @@
 import React from "react";
 import mundoWorldGif from "../../assets/nextpic.png";
+import soccerGif from "/soccer.gif";
 import JavascriptIcon from "../../../assets/javascriptsvg";
 import ReactIcon from "../../../assets/reactsvg";
 import NextIcon from "../../../assets/nextsvg";
+import ApiIcon from "../../../assets/apisvg";
 function NextBox() {
   return (
     <div>
-      <div className="text-white flex justify-center mt-3">Next Crud App</div>
+      <div className="text-white flex justify-center mt-3">
+        Premier League Soccer
+      </div>
       <div
         className="w-[400px] h-[300px] lg:h-[350px] lg:w-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
         style={{
-          backgroundImage: `url(${mundoWorldGif})`,
+          backgroundImage: `url(${soccerGif})`,
           backgroundSize: "cover",
           backgroundPosition: "center 0px",
         }}
@@ -43,6 +47,14 @@ function NextBox() {
               </div>
               <div className="w-2/3 flex justify-center items-center pr-2 h-full">
                 Next Js
+              </div>
+            </div>
+            <div className="border-[.05px] rounded-sm border-[#8f909c] flex text-white bg-[#111111] w-20 h-5 text-xs mx-2">
+              <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111]">
+                <ApiIcon />
+              </div>
+              <div className="w-2/3 flex justify-center items-center pr-2 h-full">
+                API
               </div>
             </div>
           </div>

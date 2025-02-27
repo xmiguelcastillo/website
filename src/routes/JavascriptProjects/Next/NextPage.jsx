@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeadingBar from "../../../components/HeadingBar";
 import mundoWorldGif from "../../assets/nextpic.png";
+import soccerGif from "/soccer.gif";
 import NextCode from "./NextCode";
 import NextTools from "./NextTools";
 import pokemon from "../../assets/pokemon";
@@ -11,18 +12,20 @@ function NextPage() {
       <HeadingBar />
 
       <div className="text-xl font-bold bg-gradient-to-r from-blue-700 via-yellow-300 to-pink-500 text-transparent bg-clip-text">
-        Next Crud App
+        Premier League Soccer
       </div>
       <a
-        href="https://nextjs-600m5i8lc-xmiguelcastillo-gmailcoms-projects.vercel.app/"
+        href="https://soccer-kohl.vercel.app/Chelsea"
         target="_blank"
         rel="noopener noreferrer"
       >
         <div
           className="w-[400px] h-[300px] lg:w-[600px] hover:shadow-black lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow hover:border-red-500 shadow-black border-[1px] border-[#222224] cursor-pointer"
           style={{
-            backgroundImage: `url(${mundoWorldGif})`,
-            backgroundSize: "cover",
+            backgroundImage: `url(${soccerGif})`,
+            backgroundSize: "120%",
+            backgroundPosition: "center -3px", // Moves the background image up
+            backgroundRepeat: "no-repeat",
           }}
         ></div>
       </a>
