@@ -17,7 +17,7 @@ function TopBar() {
             <div className="w-fit h-fit flex justify-center items-center  mt-[5px]">
               <img
                 src={linkedin}
-                className="w-[16px] h-[16px] filter invert brightness-50 hover:brightness-[10%] "
+                className="w-[13px] h-[13px] filter invert brightness-50 hover:brightness-[10%] "
               />
             </div>
           </a>
@@ -26,7 +26,7 @@ function TopBar() {
             <div className="w-fit h-fit flex justify-center items-center mt-[5px]">
               <img
                 src={github}
-                className="w-[18px] h-[18px] filter invert brightness-50 hover:brightness-[10%]"
+                className="w-[13px] h-[13px] filter invert brightness-50 hover:brightness-[10%]"
                 alt="GitHub icon"
               />
             </div>

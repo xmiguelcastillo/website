@@ -4,7 +4,7 @@ import githubIcon from "../../assets/githubIcon.png";
 import copyIcon from "../../assets/copyIcon.png";
 
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import * as hljsStyles from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 function PythonCode({ codeBlock, link, filename }) {
   const handleCopy = () => {
@@ -39,7 +39,7 @@ function PythonCode({ codeBlock, link, filename }) {
       <div className=" rounded text-sm overflow-x-auto bg-[#111111]">
         <SyntaxHighlighter
           language="python"
-          style={hljsStyles.dracula}
+          style={dracula}
           wrapLongLines={true}
           customStyle={{
             background: "transparent",
