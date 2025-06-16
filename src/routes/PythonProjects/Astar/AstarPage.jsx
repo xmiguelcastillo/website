@@ -4,6 +4,8 @@ import mundoWorldVidGif from "../../assets/astar.png";
 import FaceDetectioDetectionnCode from "./AstarCode";
 import AstarCode from "./AstarCode";
 import AstarTools from "./AstarTools";
+import PythonCode from "../../../components/CodeBlock/PythonCode";
+import codeBlock from "./AstarCode.js";
 
 function AstarPage() {
   return (
@@ -23,7 +25,7 @@ function AstarPage() {
       ></div>
 
       <AstarTools />
-      <AstarCode />
+      <PythonCode filename="astar.py" codeBlock={codeBlock} />
     </div>
   );
 }

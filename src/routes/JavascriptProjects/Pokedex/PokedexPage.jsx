@@ -6,6 +6,7 @@ import PokedexTools from "./PokedexTools";
 import pokemon from "../../assets/pokemon";
 import pokedex from "../../assets/Pokemon.gif";
 import PokedexSearch from "./PokedexSearch";
+import JavascriptCode from "../../../components/CodeBlock/JavascriptCode";
 function PokedexPage() {
   return (
     <div className="flex flex-col items-center h-full">
@@ -32,7 +33,7 @@ function PokedexPage() {
 
       <PokedexTools />
       <PokedexSearch />
-      <PokedexCode />
+      <JavascriptCode codeBlock={PokedexCode} filename="PokeNumber.jsx" />
     </div>
   );
 }

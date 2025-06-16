@@ -3,7 +3,9 @@ import HeadingBar from "../../../components/HeadingBar";
 import mundoWorldVidGif from "../../assets/Perceptron.png";
 import FaceDetectionCode from "./FaceDetectionCode";
 import FaceDetectionTools from "./FaceDetectionTools";
+import PythonCode from "../../../components/CodeBlock/PythonCode";
 
+import codeBlock from "./FaceDetectionCode.js";
 function FaceDetectionPage() {
   return (
     <div className="flex flex-col items-center h-full">
@@ -22,7 +24,11 @@ function FaceDetectionPage() {
       ></div>
 
       <FaceDetectionTools />
-      <FaceDetectionCode />
+      <PythonCode
+        codeBlock={codeBlock}
+        link="https://github.com/xmiguelcastillo/Perceptron-Two-Layer-Neural-Network"
+        filename="main.py"
+      />
     </div>
   );
 }

@@ -22,6 +22,8 @@ import SnakePage from "./routes/PythonProjects/Snake/SnakePage";
 import NextPage from "./routes/JavascriptProjects/Next/NextPage";
 import PokedexPage from "./routes/JavascriptProjects/Pokedex/PokedexPage";
 import SnakeGamePage from "./routes/JavascriptProjects/SnakeGame/SnakeGamePage";
+import Calculator from "./routes/JavascriptProjects/Calculator/Calculator.jsx";
+import ImageEditorPage from "./routes/PythonProjects/ImageEditor/ImageEditorPage.jsx";
 function RootLayout() {
   return (
     <>
@@ -43,6 +45,7 @@ const router = createBrowserRouter([
       { path: "/miguel", element: <Miguel /> },
       { path: "/python", element: <PythonProjects /> },
       { path: "/javascript", element: <JavascriptProjects /> },
+      { path: "/calculator", element: <Calculator /> },
       { path: "/javascript/pokedex", element: <PokedexPage /> },
       { path: "/javascript/snake", element: <SnakeGamePage /> },
       { path: "/javascript/next", element: <NextPage /> },
@@ -51,6 +54,7 @@ const router = createBrowserRouter([
       { path: "/python/mundoworld", element: <MundoWorldPage /> },
       { path: "/python/perceptron", element: <FaceDetectionPage /> },
       { path: "/python/astar", element: <AstarPage /> },
+      { path: "/python/image_editor", element: <ImageEditorPage /> },
       { path: "/python/snakegame", element: <SnakePage /> },
     ],
   },

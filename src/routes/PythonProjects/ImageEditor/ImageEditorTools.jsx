@@ -5,7 +5,7 @@ import ReactIcon from "../../../assets/reactsvg";
 import DjangoIcon from "../../../assets/djangosvg";
 import PythonIcon from "../../../assets/pythonsvg";
 
-function MundoWorldTools() {
+function ImageEditorTools() {
   return (
     <div className="flex flex-row w-[420px] lg:w-[600px] sm:w-[400px]">
       <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
@@ -31,7 +31,7 @@ function MundoWorldTools() {
           <JavascriptIcon />
         </div>
         <div className="w-2/3 flex font-normal justify-center text-[15px] sm:text-[12px] md:text-[12px] lg:text-[15px] mr-2 items-center h-full">
-          <span className="hidden sm:inline ">JS</span>
+          <span className="hidden sm:inline">JavaScript</span>
           <span className="inline sm:hidden">JS</span>
         </div>
       </div>
@@ -56,4 +56,4 @@ function MundoWorldTools() {
     </div>
   );
 }
-export default MundoWorldTools;
+export default ImageEditorTools;

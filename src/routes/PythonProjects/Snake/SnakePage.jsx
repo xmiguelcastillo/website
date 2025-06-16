@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
 import HeadingBar from "../../../components/HeadingBar";
 import mundoWorldVidGif from "../../assets/snake.gif";
-import FaceDetectioDetectionnCode from "./SnakeCode";
 import SnakeCode from "./SnakeCode";
 import SnakeTools from "./SnakeTools";
+import PythonCode from "../../../components/CodeBlock/PythonCode";
 
 function SnakePage() {
   return (
@@ -23,7 +22,7 @@ function SnakePage() {
       ></div>
 
       <SnakeTools />
-      <SnakeCode />
+      <PythonCode filename="main.py" codeBlock={SnakeCode} />
     </div>
   );
 }

@@ -3,6 +3,8 @@ import HeadingBar from "../../../components/HeadingBar";
 import mundoWorldVidGif from "../../assets/mundworldvid.gif";
 import MundoWorldCode from "./MundoWorldCode";
 import MundoWorldTools from "./MundoWorldTools";
+import PythonCode from "../../../components/CodeBlock/PythonCode";
+import codeBlock from "./MundoWordCode.js";
 
 function MundoWorldPage() {
   return (
@@ -22,7 +24,7 @@ function MundoWorldPage() {
       ></div>
 
       <MundoWorldTools />
-      <MundoWorldCode />
+      <PythonCode filename="views.py" codeBlock={codeBlock} />
     </div>
   );
 }

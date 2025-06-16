@@ -1,116 +1,132 @@
-import React, { useEffect, useState } from "react";
-import HeadingBar from "../../../components/HeadingBar";
-import SnakeCode from "../../PythonProjects/Snake/SnakeCode";
+import React, { useState } from "react";
 
-import SnakeGameTools from "./SnakeGameTools";
-import { use } from "react";
-
-function Calculator() {
-  const [result, setResult] = useState(0);
-  const [prevResult, setPrevResult] = useState(null);
-  const [operation, setOperation] = useState(null);
-
-  const numberButtons = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0];
-  const operationButtons = ["X", "-", "+"];
-
-  function handleClick(num) {
-    setResult((prev) => prev * 10 + num); // Allow multi-digit input
+// Node and LinkedList class definitions
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.next = null;
   }
-
-  function handleOperation(op) {
-    setPrevResult(result);
-    setResult(0);
-    setOperation(op);
-  }
-
-  function handleEqual() {
-    if (operation === "+") setResult(prevResult + result);
-    if (operation === "-") setResult(prevResult - result);
-    if (operation === "X") setResult(prevResult * result);
-    setPrevResult(null);
-    setOperation(null);
-  }
-
-  function handleClear() {
-    setResult(0);
-    setPrevResult(null);
-    setOperation(null);
-  }
-
-  return (
-    <div className="mt-40 flex flex-col items-center">
-      {/* Display */}
-      <div className="bg-slate-500 h-24 text-white text-3xl flex flex-col items-end justify-center px-4 w-[400px] border-[1px] border-black">
-        <div className="text-gray-300 text-lg">
-          {prevResult !== null ? `${prevResult} ${operation}` : ""}
-        </div>
-        <div>{result}</div>
-      </div>
-
-      {/* Calculator Buttons */}
-      <div className="w-[400px] h-[600px] bg-slate-500 flex">
-        {/* Numbers */}
-        <div className="w-[300px] grid grid-cols-3 gap-2 p-2">
-          {numberButtons.map((num) => (
-            <button
-              className="w-full h-[100px] text-white border-[1px] border-black bg-pink-500 text-2xl font-bold hover:border-yellow-200"
-              key={num}
-              onClick={() => handleClick(num)}
-            >
-              {num}
-            </button>
-          ))}
-        </div>
-
-        {/* Operators */}
-        <div className="w-[100px] flex flex-col gap-2 p-2">
-          {operationButtons.map((op) => (
-            <button
-              className="w-full h-[100px] text-white border-[1px] border-black bg-green-600 text-2xl font-bold hover:border-yellow-200"
-              key={op}
-              onClick={() => handleOperation(op)}
-            >
-              {op}
-            </button>
-          ))}
-          <button
-            className="w-full h-[100px] text-white border-[1px] border-black bg-blue-500 text-2xl font-bold hover:border-yellow-200"
-            onClick={handleEqual}
-          >
-            =
-          </button>
-          <button
-            className="w-full h-[100px] text-white border-[1px] border-black bg-red-500 text-2xl font-bold hover:border-yellow-200"
-            onClick={handleClear}
-          >
-            C
-          </button>
-        </div>
-      </div>
-    </div>
-  );
 }
 
-function List() {
-  const list = [1, 2, 3, 4, 5];
+class LinkedList {
+  constructor() {
+    this.head = null;
+    this._size = 0;
+  }
+
+  size() {
+    return this._size;
+  }
+
+  push_front(val) {
+    let new_node = new Node(val);
+    new_node.next = this.head;
+    this.head = new_node;
+    this._size += 1;
+  }
+
+  push_back(val) {
+    let new_node = new Node(val);
+    this._size += 1;
+    if (!this.head) {
+      this.head = new_node;
+      return;
+    }
+    let cur = this.head;
+    while (cur.next) {
+      cur = cur.next;
+    }
+    cur.next = new_node;
+  }
+
+  // Convert the linked list into an array to display in React
+  toArray() {
+    let arr = [];
+    let cur = this.head;
+    while (cur) {
+      arr.push(cur.val);
+      cur = cur.next;
+    }
+    return arr;
+  }
+}
+
+// React Component to display the LinkedList
+export default function Calculator() {
+  const [linkedList, setLinkedList] = useState(() => new LinkedList());
+
+  const [value, setValue] = useState(""); // For capturing input
+
+  const listArray = linkedList.toArray(); // Get the array representation of the list
+
+  // Function to handle pushing a new node to the front
+  const handlePushFront = () => {
+    if (value) {
+      // Create a new instance to trigger re-render
+      const newLinkedList = new LinkedList();
+      newLinkedList.head = linkedList.head; // Copy the existing list
+      newLinkedList._size = linkedList._size;
+
+      newLinkedList.push_front(Number(value)); // Add the new element
+      setLinkedList(newLinkedList); // Update the state with the new LinkedList instance
+
+      setValue(""); // Clear input field
+    }
+  };
+
+  // Function to handle pushing a new node to the back
+  const handlePushBack = () => {
+    if (value) {
+      // Create a new instance to trigger re-render
+      const newLinkedList = new LinkedList();
+      newLinkedList.head = linkedList.head; // Copy the existing list
+      newLinkedList._size = linkedList._size;
+
+      newLinkedList.push_back(Number(value)); // Add the new element
+      setLinkedList(newLinkedList); // Update the state with the new LinkedList instance
+
+      setValue(""); // Clear input field
+    }
+  };
+
   return (
-    <div>
-      <ul>
-        {list.map((element, index) => (
-          <li key={index}>
-            {element} {index}
-          </li>
+    <div className="flex flex-col justify-center items-center text-white">
+      <h1>Linked List</h1>
+      {/* Display Linked List */}
+      <div className="flex">
+        {listArray.map((value, index) => (
+          <div
+            key={index}
+            className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center m-2 text-black"
+          >
+            {value}
+          </div>
         ))}
-      </ul>
-    </div>
-  );
-}
-function SnakeGamePage() {
-  return (
-    <div className="flex flex-col items-center  bg-white h-[1000px]">
-      <Calculator />
-    </div>
-  );
-}
+      </div>
+      <div className="mt-4">Size: {linkedList.size()}</div>
 
-export default SnakeGamePage;
+      {/* Input and buttons to push values */}
+      <div className="mt-4 flex items-center">
+        <input
+          type="number"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          className="p-2 text-black"
+          placeholder="Enter a value"
+        />
+        <button
+          onClick={handlePushFront}
+          className="ml-2 bg-green-500 text-white p-2 rounded"
+        >
+          Push Front
+        </button>
+        <button
+          onClick={handlePushBack}
+          className="ml-2 bg-blue-500 text-white p-2 rounded"
+        >
+          Push Back
+        </button>
+      </div>
+    </div>
+  );
+}
