@@ -4,7 +4,7 @@ import githubIcon from "../../assets/githubIcon.png";
 import copyIcon from "../../assets/copyIcon.png";
 
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs"; 
 
 function PythonCode({ codeBlock, link, filename }) {
   const handleCopy = () => {
@@ -23,7 +23,7 @@ function PythonCode({ codeBlock, link, filename }) {
         </div>
         <div className="ml-4">{filename}</div>
         <div className="flex ml-auto justify-center items-center">
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <img
               src={githubIcon}
               className="w-[24px] h-[24px]"
@@ -36,7 +36,7 @@ function PythonCode({ codeBlock, link, filename }) {
         </button>
       </div>
 
-      <div className=" rounded text-sm overflow-x-auto bg-[#111111]">
+      <div className="rounded text-sm overflow-x-auto bg-[#111111]">
         <SyntaxHighlighter
           language="python"
           style={dracula}
