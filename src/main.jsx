@@ -24,6 +24,8 @@ import PokedexPage from "./routes/JavascriptProjects/Pokedex/PokedexPage";
 import SnakeGamePage from "./routes/JavascriptProjects/SnakeGame/SnakeGamePage";
 import Calculator from "./routes/JavascriptProjects/Calculator/Calculator.jsx";
 import ImageEditorPage from "./routes/PythonProjects/ImageEditor/ImageEditorPage.jsx";
+import SpaceInvadersPage from "./routes/PythonProjects/SpaceInvaders/SpaceInvadersPage.jsx";
+
 function RootLayout() {
   return (
     <>
@@ -55,6 +57,7 @@ const router = createBrowserRouter([
       { path: "/python/perceptron", element: <FaceDetectionPage /> },
       { path: "/python/astar", element: <AstarPage /> },
       { path: "/python/image_editor", element: <ImageEditorPage /> },
+      { path: "/python/space_invaders", element: <SpaceInvadersPage /> },
       { path: "/python/snakegame", element: <SnakePage /> },
     ],
   },

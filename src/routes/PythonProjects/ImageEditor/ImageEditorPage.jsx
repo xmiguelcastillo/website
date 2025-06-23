@@ -62,7 +62,7 @@ function ImageEditorPage() {
       >
         <HeadingBar />
 
-        <div className="text-xl font-bold bg-gradient-to-r from-blue-500 via-blue-300 to-blue-700 text-transparent bg-clip-text">
+        <div className="text-xl font-bold bg-gradient-to-r from-[#6f0971] via[#a607aa] to-[#ff0fff] text-transparent bg-clip-text">
           Image Processor with Numpy
         </div>
 

@@ -6,6 +6,7 @@ import FaceDetectionBox from "./PythonProjects/FaceDetection/FaceDetectionBox";
 import AstarBox from "./PythonProjects/Astar/AstarBox";
 import SnakeBox from "./PythonProjects/Snake/SnakeBox";
 import ImageEditorBox from "./PythonProjects/ImageEditor/ImageEditorBox";
+import SpaceInvadersBox from "./PythonProjects/SpaceInvaders/SpaceInvadersBox";
 function PythonProjects() {
   return (
     <div className="flex flex-col items-center  h-full">
@@ -25,6 +26,10 @@ function PythonProjects() {
 
       <Link className="" to="/python/astar">
         <AstarBox />
+      </Link>
+
+      <Link className="" to="/python/space_invaders">
+        <SpaceInvadersBox />
       </Link>
 
       <Link className="" to="/python/image_editor">
