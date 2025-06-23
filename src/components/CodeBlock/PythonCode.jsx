@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import pythonIcon from "../../assets/pythonIcon.svg";
 import githubIcon from "../../assets/githubIcon.png";
 import copyIcon from "../../assets/copyIcon.png";
 
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import hljs from "highlight.js";
+import "highlight.js/styles/gradient-dark.css";
 
 function PythonCode({ codeBlock, link, filename }) {
+  useEffect(() => {
+    hljs.highlightAll();
+  }, []);
+
   const handleCopy = () => {
     navigator.clipboard.writeText(codeBlock);
   };
 
   return (
     <div className="w-[400px] h-full lg:h-full lg:w-[500px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border-[1px] border-l-blue-500 border-[#222224] flex-col">
+      {/* Header */}
       <div className="flex flex-row w-full px-4 py-2 text-white border-[#222224] border-b-[1px] rounded-t-lg">
         <div className="flex justify-center items-center">
           <img
@@ -36,18 +41,16 @@ function PythonCode({ codeBlock, link, filename }) {
         </button>
       </div>
 
-      <div className="rounded text-sm overflow-x-auto bg-[#111111]">
-        <SyntaxHighlighter
-          language="python"
-          style={dracula}
-          wrapLongLines={true}
-          customStyle={{
-            background: "transparent",
-            padding: 8,
-          }}
-        >
-          {codeBlock}
-        </SyntaxHighlighter>
+      {/* Code block */}
+      <div className="rounded text-sm overflow-x-auto bg-[#111111] ">
+        <pre style={{ background: "transparent" }}>
+          <code
+            className="language-python"
+            style={{ background: "transparent" }}
+          >
+            {codeBlock.trim()}
+          </code>
+        </pre>
       </div>
     </div>
   );
