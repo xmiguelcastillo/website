@@ -20,7 +20,6 @@ function SpaceInvadersPage() {
           src={space_invaders_vid}
           controls
           autoPlay
-          muted
           loop
         />
       </div>
