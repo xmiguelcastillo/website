@@ -36,7 +36,7 @@ function ImageEditorPage() {
     formData.append("bColor", b);
     // formData.append("intensity", intensity);
 
-    fetch("http://127.0.0.1:8000/upload-image/", {
+    fetch("https://test-image-4qr6.onrender.com/upload-image/", {
       method: "POST",
       body: formData,
     })
