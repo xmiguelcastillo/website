@@ -34,19 +34,19 @@ function ImageEditorPage() {
     formData.append("rColor", r);
     formData.append("gColor", g);
     formData.append("bColor", b);
-    formData.append("intensity", intensity);
+    // formData.append("intensity", intensity);
 
-    fetch("https://test-image-4qr6.onrender.com/upload-image/", {
+    fetch("http://127.0.0.1:8000/upload-image/", {
       method: "POST",
       body: formData,
     })
       .then((res) => res.json())
       .then((data) => {
         console.log("Backend response:", data);
-        setRotatedImage(`data:image/png;base64,${data.rotated_base64}`);
+        // setRotatedImage(`data:image/png;base64,${data.rotated_base64}`);
         setColoredImage(`data:image/png;base64,${data.colored_base64}`);
-        setBlurredImage(`data:image/png;base64,${data.blurred_base64}`);
-        setGreyScaledImage(`data:image/png;base64,${data.grey_base64}`);
+        // setBlurredImage(`data:image/png;base64,${data.blurred_base64}`);
+        // setGreyScaledImage(`data:image/png;base64,${data.grey_base64}`);
       })
       .catch((err) => console.error("Upload error:", err));
   };
@@ -124,56 +124,6 @@ function ImageEditorPage() {
           />
         </div>
 
-        <h1 className="text-white my-3">Blurred Image</h1>
-        <div
-          className="w-[400px] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] rounded-lg shadow shadow-black border-[1px] border-[#222224]"
-          style={{
-            backgroundImage: preview
-              ? `url(${blurredImage})`
-              : `url(${blurred_miko})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-
-        {blurredImage && (
-          <a
-            href={blurredImage}
-            download="blurred_image.png"
-            className="mt-5 px-4 py-2 bg-[#ff92fe] text-black rounded"
-          >
-            Download
-          </a>
-        )}
-        <input
-          type="text"
-          name="customMessage"
-          placeholder="Intensity 1-50"
-          className=" text-center my-5 text-black w-[30%] border-2 border-[#878787] rounded-sm mt-5"
-          onChange={(e) => setIntenstiy(e.target.value)}
-        />
-
-        <h1 className="text-white my-3">Grayscaled Image</h1>
-        <div
-          className="w-[400px] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] rounded-lg shadow shadow-black border-[1px] border-[#222224]"
-          style={{
-            backgroundImage: preview
-              ? `url(${greyscaledImage})`
-              : `url(${grey_miko})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-
-        {greyscaledImage && (
-          <a
-            href={greyscaledImage}
-            download="grey_image.png"
-            className="mt-5 px-4 py-2 bg-[#6ebeff] text-black rounded"
-          >
-            Download
-          </a>
-        )}
         <div className="w-[400px] flex my-5 flex-row">
           <input
             type="file"
