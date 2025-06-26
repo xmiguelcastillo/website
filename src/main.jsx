@@ -21,10 +21,12 @@ import SnakePage from "./routes/PythonProjects/Snake/SnakePage";
 
 import NextPage from "./routes/JavascriptProjects/Next/NextPage";
 import PokedexPage from "./routes/JavascriptProjects/Pokedex/PokedexPage";
+import MazePage from "./routes/JavascriptProjects/Maze/MazePage.jsx";
 import SnakeGamePage from "./routes/JavascriptProjects/SnakeGame/SnakeGamePage";
 import Calculator from "./routes/JavascriptProjects/Calculator/Calculator.jsx";
 import ImageEditorPage from "./routes/PythonProjects/ImageEditor/ImageEditorPage.jsx";
 import SpaceInvadersPage from "./routes/PythonProjects/SpaceInvaders/SpaceInvadersPage.jsx";
+import BacktrackerPage from "./routes/PythonProjects/Backtracker/BacktrackerPage.jsx";
 
 function RootLayout() {
   return (
@@ -49,6 +51,7 @@ const router = createBrowserRouter([
       { path: "/javascript", element: <JavascriptProjects /> },
       { path: "/calculator", element: <Calculator /> },
       { path: "/javascript/pokedex", element: <PokedexPage /> },
+      { path: "/javascript/maze", element: <MazePage /> },
       { path: "/javascript/snake", element: <SnakeGamePage /> },
       { path: "/javascript/next", element: <NextPage /> },
       { path: "/cpp", element: <CppProjects /> },
@@ -58,6 +61,7 @@ const router = createBrowserRouter([
       { path: "/python/astar", element: <AstarPage /> },
       { path: "/python/image_editor", element: <ImageEditorPage /> },
       { path: "/python/space_invaders", element: <SpaceInvadersPage /> },
+      { path: "/python/backtracker", element: <BacktrackerPage /> },
       { path: "/python/snakegame", element: <SnakePage /> },
     ],
   },

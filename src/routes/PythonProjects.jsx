@@ -7,6 +7,7 @@ import AstarBox from "./PythonProjects/Astar/AstarBox";
 import SnakeBox from "./PythonProjects/Snake/SnakeBox";
 import ImageEditorBox from "./PythonProjects/ImageEditor/ImageEditorBox";
 import SpaceInvadersBox from "./PythonProjects/SpaceInvaders/SpaceInvadersBox";
+import BacktrackerBox from "./PythonProjects/Backtracker/BacktrackerBox";
 function PythonProjects() {
   return (
     <div className="flex flex-col items-center  h-full">
@@ -34,6 +35,9 @@ function PythonProjects() {
 
       <Link className="" to="/python/image_editor">
         <ImageEditorBox />
+      </Link>
+      <Link className="" to="/python/backtracker">
+        <BacktrackerBox />
       </Link>
       <Link className="" to="/python/snakegame">
         <SnakeBox />

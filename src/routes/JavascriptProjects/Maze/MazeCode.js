@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-
-export default function Calculator() {
+const codeBlock = `import React, { useState, useEffect, useRef } from "react";
+export default function Maze() {
   const [width] = useState(16);
   const [height] = useState(16);
   const [start_pos] = useState([1, 1]);
@@ -119,8 +118,7 @@ export default function Calculator() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: `repeat(${adjusted.width}, 20px)`,
-          gridTemplateRows: `repeat(${adjusted.height}, 20px)`,
+          gridTemplateColumns: repeat({adjusted.width}, 20px),
           gap: "1px",
           marginTop: 20,
         }}
@@ -130,7 +128,7 @@ export default function Calculator() {
           const ratio = Math.min(step / totalSteps, 1);
           const blue = Math.floor(200 - 150 * ratio);
           const color =
-            cell === 1 ? "black" : `rgb(${blue - 40}, ${blue}, 255)`;
+            cell === 1 ? black : rgb({blue - 40}, {blue}, 255);
           return (
             <div
               className="flex flex-1 items-center justify-center"
@@ -148,3 +146,7 @@ export default function Calculator() {
     </div>
   );
 }
+
+      `;
+
+export default codeBlock;

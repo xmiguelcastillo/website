@@ -30,9 +30,7 @@ export default function PokedexBox() {
     <div>
       <div className="text-white flex justify-center mt-3">Pokémon Pokédex</div>
       <div className="relative h-[300px]  w-[400px] sm:h-[300px] sm:w-[400px] lg:h-[350px] lg:w-[500px] mt-3 rounded-lg shadow shadow-black border-[1px]  border-[#222224] overflow-hidden">
-        {/* 3D Model Container */}
         <div className="relative w-full h-3/5 flex justify-center items-center">
-          {/* Radial Background Effect behind everything */}
           <div
             className="absolute   mt-[90px] flex items-center justify-center w-[290px] h-[100px] pointer-events-none"
             style={{
@@ -41,7 +39,6 @@ export default function PokedexBox() {
             }}
           ></div>
 
-          {/* 3D Model Canvas */}
           <Canvas shadows camera={{ position: [80, 1, 1] }}>
             <Environment preset="city" />
             <PerspectiveCamera
@@ -62,7 +59,6 @@ export default function PokedexBox() {
           </Canvas>
         </div>
 
-        {/* Project Information */}
         <div className="flex-col  w-full h-1/5">
           <a
             href="https://xmiguelcastillo.github.io/pokedex/bulbasaur"

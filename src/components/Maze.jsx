@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export default function Calculator() {
-  const [width] = useState(16);
-  const [height] = useState(16);
+export default function Maze() {
+  const [width] = useState(20);
+  const [height] = useState(20);
   const [start_pos] = useState([1, 1]);
   const [maze, setMaze] = useState([]);
   const [step, setStep] = useState(0);
@@ -113,38 +113,40 @@ export default function Calculator() {
 
     return () => clearInterval(interval);
   }, [adjusted.width, adjusted.height, start_pos]);
-
+  const maxWidth = 400;
+  const gapSize = 1;
+  const totalGap = (adjusted.width - 1) * gapSize;
+  const cellSize = Math.floor((maxWidth - totalGap) / adjusted.width);
+  let randomR = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
+  let randomG = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
+  let randomB = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
   return (
-    <div className="flex items-center justify-center min-h-screen ">
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: `repeat(${adjusted.width}, 20px)`,
-          gridTemplateRows: `repeat(${adjusted.height}, 20px)`,
-          gap: "1px",
-          marginTop: 20,
-        }}
-      >
-        {maze.flat().map((cell, i) => {
-          const totalSteps = adjusted.width * adjusted.height;
-          const ratio = Math.min(step / totalSteps, 1);
-          const blue = Math.floor(200 - 150 * ratio);
-          const color =
-            cell === 1 ? "black" : `rgb(${blue - 40}, ${blue}, 255)`;
-          return (
-            <div
-              className="flex flex-1 items-center justify-center"
-              key={i}
-              style={{
-                width: 20,
-                height: 20,
-                backgroundColor: color,
-                transition: "background-color 0.2s ease",
-              }}
-            />
-          );
-        })}
-      </div>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${adjusted.width}, ${cellSize}px)`,
+        gridTemplateRows: `repeat(${adjusted.height}, ${cellSize}px)`,
+        gap: `${gapSize}px`,
+        width: `${adjusted.width * cellSize + totalGap}px`, // exact 400px
+        height: `${adjusted.height * cellSize + totalGap}px`,
+        marginTop: 20,
+      }}
+    >
+      {maze.flat().map((cell, i) => {
+        const color =
+          cell === 1 ? "black" : `rgb(${randomR}, ${randomG}, ${randomB})`;
+        return (
+          <div
+            key={i}
+            style={{
+              width: `${cellSize}px`,
+              height: `${cellSize}px`,
+              backgroundColor: color,
+              transition: "background-color 0.2s ease",
+            }}
+          />
+        );
+      })}
     </div>
   );
 }

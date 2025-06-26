@@ -17,7 +17,6 @@ function PythonCode({ codeBlock, link, filename }) {
 
   return (
     <div className="w-[400px] h-full lg:h-full lg:w-[500px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border-[1px] border-l-blue-500 border-[#222224] flex-col">
-      {/* Header */}
       <div className="flex flex-row w-full px-4 py-2 text-white border-[#222224] border-b-[1px] rounded-t-lg">
         <div className="flex justify-center items-center">
           <img
@@ -41,7 +40,6 @@ function PythonCode({ codeBlock, link, filename }) {
         </button>
       </div>
 
-      {/* Code block */}
       <div className="rounded text-sm overflow-x-auto bg-[#111111] ">
         <pre style={{ background: "transparent" }}>
           <code

@@ -124,17 +124,17 @@ function ImageEditorPage() {
           />
         </div>
 
-        <div className="w-[400px] flex my-5 flex-row">
+        <div className="w-[400px] max-w-full flex flex-row items-center space-x-2">
           <input
             type="file"
             accept="image/*"
             name="image"
-            className="mt-2 text-white"
+            className="mt-2 text-white flex-1 overflow-hidden"
             onChange={(e) => setSelectedFile(e.target.files[0])}
           />
           <button
             type="submit"
-            className=" px-4 py-2 bg-green-500 text-white rounded"
+            className="mt-2 px-4 py-2 border-[1px] border-[#3d3d42] text-white rounded shrink-0"
           >
             Send
           </button>

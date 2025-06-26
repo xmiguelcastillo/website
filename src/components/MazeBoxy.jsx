@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export default function Calculator() {
-  const [width] = useState(16);
-  const [height] = useState(16);
+export default function MazeBoxy() {
+  const [width] = useState(20);
+  const [height] = useState(20);
   const [start_pos] = useState([1, 1]);
   const [maze, setMaze] = useState([]);
   const [step, setStep] = useState(0);
@@ -113,31 +113,52 @@ export default function Calculator() {
 
     return () => clearInterval(interval);
   }, [adjusted.width, adjusted.height, start_pos]);
+  let randomR = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
+  let randomG = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
+  let randomB = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
+  const maxWidth = 400;
+  const maxHeight = 300;
+  const gapSize = 1;
 
+  const totalHorizontalGap = (adjusted.width - 1) * gapSize;
+  const totalVerticalGap = (adjusted.height - 1) * gapSize;
+
+  const cellWidth = (maxWidth - totalHorizontalGap) / adjusted.width;
+  const cellHeight = (maxHeight - totalVerticalGap) / adjusted.height;
+  const cellSize = Math.floor(Math.min(cellWidth, cellHeight));
+
+  const containerWidth = adjusted.width * cellSize + totalHorizontalGap;
+  const containerHeight = adjusted.height * cellSize + totalVerticalGap;
   return (
-    <div className="flex items-center justify-center min-h-screen ">
+    <div
+      className="overflow-hidden flex  justify-center items-center"
+      style={{
+        width: `${maxWidth}px`,
+        height: `${maxHeight}px`,
+        border: "1px solid #222224",
+        borderRadius: "8px",
+        backgroundColor: "black",
+      }}
+    >
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: `repeat(${adjusted.width}, 20px)`,
-          gridTemplateRows: `repeat(${adjusted.height}, 20px)`,
-          gap: "1px",
-          marginTop: 20,
+          gridTemplateColumns: `repeat(${adjusted.width}, ${cellSize}px)`,
+          gridTemplateRows: `repeat(${adjusted.height}, ${cellSize}px)`,
+          gap: `${gapSize}px`,
+          width: `${containerWidth}px`,
+          height: `${containerHeight}px`,
         }}
       >
         {maze.flat().map((cell, i) => {
-          const totalSteps = adjusted.width * adjusted.height;
-          const ratio = Math.min(step / totalSteps, 1);
-          const blue = Math.floor(200 - 150 * ratio);
           const color =
-            cell === 1 ? "black" : `rgb(${blue - 40}, ${blue}, 255)`;
+            cell === 1 ? "black" : `rgb(${randomR}, ${randomG}, ${randomB})`;
           return (
             <div
-              className="flex flex-1 items-center justify-center"
               key={i}
               style={{
-                width: 20,
-                height: 20,
+                width: `${cellSize}px`,
+                height: `${cellSize}px`,
                 backgroundColor: color,
                 transition: "background-color 0.2s ease",
               }}

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import PokedexBox from "./JavascriptProjects/Pokedex/PokedexBox";
 import NextBox from "./JavascriptProjects/Next/NextBox";
 import SnakeGameBox from "./JavascriptProjects/SnakeGame/SnakeGameBox";
+import MazeBox from "./JavascriptProjects/Maze/MazeBox";
+import MazeBoxy from "../components/MazeBoxy";
 function JavascriptProjects() {
   return (
     <div className="flex flex-col items-center  h-full">
@@ -13,6 +15,9 @@ function JavascriptProjects() {
       </div>
       <Link className="" to="/javascript/pokedex">
         <PokedexBox />
+      </Link>
+      <Link className="" to="/javascript/maze">
+        <MazeBox />
       </Link>
       {/* 
       <Link className="" to="/javascript/snake">

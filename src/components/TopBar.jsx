@@ -13,28 +13,28 @@ function TopBar() {
     <div className="lg:w-[500px] sm:w-[400px] w-[400px] font-light rounded-lg shadow shadow-black bg-[#111111] border-[1px] border-[#222224]">
       <div className="flex justify-center pt-2 text-xl text-white items-center  w-full h-2/5">
         <div className="flex flex-row">
-          <a href="https://www.linkedin.com/in/miguel-castillo-aa91bb34a/">
-            <div className="w-fit h-fit flex justify-center items-center  mt-[5px]">
-              <img
-                src={linkedin}
-                className="w-[13px] h-[13px] filter invert brightness-50 hover:brightness-[10%] "
-              />
-            </div>
-          </a>
           <div className="mx-6">Miguel Castillo</div>
-          <a href="https://github.com/xmiguelcastillo">
-            <div className="w-fit h-fit flex justify-center items-center mt-[5px]">
-              <img
-                src={github}
-                className="w-[13px] h-[13px] filter invert brightness-50 hover:brightness-[10%]"
-                alt="GitHub icon"
-              />
-            </div>
-          </a>
         </div>
       </div>
-      <div className="flex text-xs justify-center  items-center text-[#757a83]  w-full h-1/5">
+      <div className="flex flex-row text-xs justify-center  items-center text-[#757a83]  w-full h-1/5 gap-3">
+        <div className="w-fit h-fit flex justify-center items-center  mt-[5px]">
+          <a href="https://www.linkedin.com/in/miguel-castillo-aa91bb34a/">
+            <img
+              src={linkedin}
+              className="w-[13px] h-[13px] filter invert brightness-50 hover:brightness-[10%] "
+            />
+          </a>
+        </div>
         Newark, New Jersey
+        <a href="https://github.com/xmiguelcastillo">
+          <div className="w-fit h-fit flex justify-center items-center mt-[5px]">
+            <img
+              src={github}
+              className="w-[13px] h-[13px] filter invert brightness-50 hover:brightness-[10%]"
+              alt="GitHub icon"
+            />
+          </div>
+        </a>
       </div>
 
       <div className="flex flex-row text-center justify-center items-center">
