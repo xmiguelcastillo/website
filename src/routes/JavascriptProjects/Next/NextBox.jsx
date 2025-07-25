@@ -7,58 +7,70 @@ import NextIcon from "../../../assets/nextsvg";
 import ApiIcon from "../../../assets/apisvg";
 function NextBox() {
   return (
-    <div>
-      <div className="text-white flex justify-center mt-3">
-        Premier League Soccer
+    <div className="flex flex-col justify-center items-center min-w-full mb-5">
+      <div className="text-white flex justify-center  mt-3">
+        Premier League Soccer with Next Js
       </div>
       <div
-        className="w-[400px] h-[300px] lg:h-[350px] lg:w-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
-        style={{
-          backgroundImage: `url(${soccerGif})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center 0px",
-        }}
+        className="
+        w-[91%] sm:w-[400px] lg:w-[500px] mt-3
+        font-light rounded-lg shadow shadow-black bg-[#111111]
+        border-[1px] border-[#222224] text-md
+        lg:h-[350px] h-[300px] overflow-hidden
+      "
       >
-        <div className="w-full h-3/5 rounded-lg"></div>
-        <div className="flex-col w-full h-1/5">
-          <div className="text-white  flex justify-center items-center text-sm"></div>
-          <div className="flex w-full h-full justify-center items-center">
-            <div className="border-[.05px] rounded-sm bg-[#111111] border-[#8f909c] flex text-white w-20 h-5 text-xs mx-2">
-              <div className="w-1/3 flex justify-center bg-[#111111] text-black items-center h-full">
-                <JavascriptIcon />
-              </div>
-              <div className="w-2/3 flex justify-center items-center h-full">
-                Javascript
-              </div>
+        <div
+          className="w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${soccerGif})`,
+          }}
+        >
+          <div className="w-full h-3/5 rounded-lg"></div>
+          <div className="flex-col w-full h-1/5">
+            <div className="text-white font-normal  flex justify-center items-center text-sm">
+              Soccer Next Js
             </div>
+            <div className="flex w-full px-2 h-full justify-center font-normal items-center">
+              <div className="flex items-center text-white bg-[#111111] border-[0.5px] border-[#8f909c] rounded-sm h-5 text-xs mx-1 w-24">
+                <div className="flex justify-center items-center h-full w-1/3">
+                  <JavascriptIcon />
+                </div>
+                <div className="flex justify-center items-center h-full w-2/3">
+                  Javascript
+                </div>
+              </div>
 
-            <div className="border-[.05px] rounded-sm border-[#8f909c] bg-[#111111] flex text-white w-20 h-5 text-xs mx-2">
-              <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111]">
-                <ReactIcon />
+              <div className="flex items-center text-white bg-[#111111] border-[0.5px] border-[#8f909c] rounded-sm h-5 text-xs mx-1 w-24">
+                <div className="flex justify-center items-center h-full w-1/3">
+                  <ReactIcon />
+                </div>
+                <div className="flex justify-center items-center h-full w-2/3">
+                  React
+                </div>
               </div>
-              <div className="w-2/3 flex justify-center items-center h-full">
-                React
-              </div>
-            </div>
 
-            <div className="border-[.05px] rounded-sm border-[#8f909c] flex text-white bg-[#111111] w-20 h-5 text-xs mx-2">
-              <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111]">
-                <NextIcon />
+              <div className="flex items-center text-white bg-[#111111] border-[0.5px] border-[#8f909c] rounded-sm h-5 text-xs mx-1 w-24">
+                <div className="flex justify-center items-center h-full w-1/3">
+                  <NextIcon />
+                </div>
+                <div className="flex justify-center items-center sm:text-[12px] text-[11px] h-full w-2/3">
+                  Next js
+                </div>
               </div>
-              <div className="w-2/3 flex justify-center items-center pr-2 h-full">
-                Next Js
+
+              <div className="flex items-center text-white bg-[#111111] border-[0.5px] border-[#8f909c] rounded-sm h-5 text-xs mx-1 w-24">
+                <div className="flex justify-center items-center h-full w-1/3">
+                  <ApiIcon />
+                </div>
+                <div className="flex justify-center items-center h-full w-2/3">
+                  Api
+                </div>
               </div>
             </div>
-            <div className="border-[.05px] rounded-sm border-[#8f909c] flex text-white bg-[#111111] w-20 h-5 text-xs mx-2">
-              <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111]">
-                <ApiIcon />
-              </div>
-              <div className="w-2/3 flex justify-center items-center pr-2 h-full">
-                API
-              </div>
+            <div className="text-[#757a83] font-normal flex justify-center items-center text-xs">
+              Premier League Fixtures
             </div>
           </div>
-          <div className="text-red-500 flex justify-center items-center text-xs"></div>
         </div>
       </div>
     </div>

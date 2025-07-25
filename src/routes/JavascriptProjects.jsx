@@ -13,18 +13,21 @@ function JavascriptProjects() {
       <div className="text-xl font-bold bg-gradient-to-r from-[#f7e024] via-yellow-400 to-[#77681f] text-transparent bg-clip-text">
         JAVASCRIPT PROJECTS
       </div>
-      <Link className="" to="/javascript/pokedex">
+      <Link
+        className="block w-full flex justify-center"
+        to="/javascript/pokedex"
+      >
         <PokedexBox />
       </Link>
-      <Link className="" to="/javascript/maze">
+      <Link className="block w-full flex justify-center" to="/javascript/maze">
         <MazeBox />
       </Link>
       {/* 
-      <Link className="" to="/javascript/snake">
+      <Link  className="block w-full flex justify-center" to="/javascript/snake">
          <SnakeGameBox />
       </Link>
 */}
-      <Link className="" to="/javascript/next">
+      <Link className="block w-full flex justify-center" to="/javascript/next">
         <NextBox />
       </Link>
     </div>

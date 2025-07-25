@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function HeadingBar() {
   return (
-    <div className="flex flex-row h-10 mb-8 w-[400px] lg:w-[500px] sm:w-[400px] mt-4 font-light rounded-lg shadow shadow-black bg-[#111111] border-[1px] border-[#222224] text-md">
+    <div className="flex flex-row h-10 mb-8 w-[91%] lg:w-[500px] sm:w-[400px] mt-4 font-light rounded-lg shadow shadow-black bg-[#111111] border-[1px] border-[#222224] text-md">
       <Link
         to="/miguel"
         className="text-white flex justify-center items-center w-1/5 hover:text-[#0191ff]"

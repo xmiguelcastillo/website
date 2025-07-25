@@ -14,7 +14,7 @@ function BacktrackerPage() {
         Backtracker/DFS Maze Generator
       </div>
       <div
-        className=" w-[400px] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224] bg-black"
+        className=" w-[91%] bg-black h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
         style={{
           backgroundImage: `url(${backtrackerGif})`,
           backgroundSize: "80%",

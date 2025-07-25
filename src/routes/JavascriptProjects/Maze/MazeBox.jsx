@@ -7,13 +7,13 @@ import MazeBoxy from "../../../components/MazeBoxy";
 
 function MazeBox() {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <div className="text-white flex justify-center mt-3">
         Maze Generator/Backtracker
       </div>
 
-      <div className="w-[400px] h-[300px] lg:h-[350px] lg:w-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border border-[#222224] bg-black overflow-hidden flex flex-col">
-        <div className="flex pt-20 justify-center items-center h-[220px]">
+      <div className="w-[91%] h-[300px] lg:h-[350px] lg:w-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border border-[#222224] bg-black overflow-hidden flex flex-col">
+        <div className="flex  pt-20 justify-center items-center h-[220px]">
           <MazeBoxy />
         </div>
 

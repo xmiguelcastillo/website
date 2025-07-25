@@ -68,7 +68,7 @@ function ImageEditorPage() {
 
         <h1 className="text-white my-3">Black and White Color Changer</h1>
         <div
-          className="w-[400px] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
+          className="w-[91%] h-[300px] lg:w-[600px] lg:h-[500px]  sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
           style={{
             backgroundImage: preview ? `url(${preview})` : `url(${astroboy})`,
             backgroundSize: "cover",
@@ -80,7 +80,7 @@ function ImageEditorPage() {
           Change Black(Use Black and White Pic)
         </h1>
         <div
-          className="w-[400px] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] rounded-lg shadow shadow-black border-[1px] border-[#222224]"
+          className="w-[91%] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] rounded-lg shadow shadow-black border-[1px] border-[#222224]"
           style={{
             backgroundImage: preview
               ? `url(${coloredImage})`
@@ -99,7 +99,7 @@ function ImageEditorPage() {
             Download
           </a>
         )}
-        <div className="w-[400px] flex justify-between my-5">
+        <div className="w-[91%] flex justify-between my-5">
           <input
             type="text"
             name="customMessage"
@@ -124,7 +124,7 @@ function ImageEditorPage() {
           />
         </div>
 
-        <div className="w-[400px] max-w-full flex flex-row items-center space-x-2">
+        <div className="w-[91%] max-w-full flex flex-row items-center space-x-2">
           <input
             type="file"
             accept="image/*"

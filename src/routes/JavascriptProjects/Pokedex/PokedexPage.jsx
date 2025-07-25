@@ -13,15 +13,16 @@ function PokedexPage() {
       <HeadingBar />
 
       <div className="text-xl font-bold bg-gradient-to-r from-[#f04037] via-[#FFFFFF] to-[#f04037] text-transparent bg-clip-text">
-        Pokedex
+        Pokédex
       </div>
       <a
         href="https://xmiguelcastillo.github.io/pokedex/bulbasaur"
         target="_blank"
         rel="noopener noreferrer"
+        className="flex block w-full  justify-center"
       >
         <div
-          className="w-[400px] h-[300px] lg:w-[600px] hover:shadow-black lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224] cursor-pointer"
+          className="w-[91%] h-[300px] lg:w-[600px] hover:shadow-black lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224] cursor-pointer"
           style={{
             backgroundImage: `url(${pokedex})`,
             backgroundSize: "cover",

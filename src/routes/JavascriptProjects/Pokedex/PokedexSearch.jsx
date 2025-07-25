@@ -11,7 +11,7 @@ export default function PokedexSearch() {
   };
 
   return (
-    <div className="mt-6  justify-center items-center w-[400px] lg:w-[600px] sm:w-[400px]">
+    <div className="mt-6  justify-center items-center w-[91%] lg:w-[600px] sm:w-[400px]">
       <form onSubmit={handleSearch} className="flex   items-center gap-2">
         <input
           type="text"

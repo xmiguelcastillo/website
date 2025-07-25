@@ -12,7 +12,7 @@ function MazePage() {
     <div className="flex flex-col items-center h-full">
       <HeadingBar />
 
-      <div className="text-xl font-bold bg-gradient-to-r from-red-600 via-green-500 to-blue-600 text-transparent bg-clip-text">
+      <div className="text-xl font-bold bg-gradient-to-r from-red-600 via-green-500 to-pink-500 text-transparent bg-clip-text">
         Maze Generator/Backtracker
       </div>
 

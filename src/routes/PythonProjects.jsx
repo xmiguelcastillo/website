@@ -17,29 +17,44 @@ function PythonProjects() {
         PYTHON PROJECTS
       </div>
 
-      <Link className="" to="/python/mundoworld">
+      <Link
+        className="block w-full flex justify-center"
+        to="/python/mundoworld"
+      >
         <MundoworldBox />
       </Link>
 
-      <Link className="" to="/python/perceptron">
+      <Link
+        className="block w-full flex justify-center"
+        to="/python/perceptron"
+      >
         <FaceDetectionBox />
       </Link>
 
-      <Link className="" to="/python/astar">
+      <Link className="block w-full flex justify-center" to="/python/astar">
         <AstarBox />
       </Link>
 
-      <Link className="" to="/python/space_invaders">
+      <Link
+        className="block w-full flex justify-center"
+        to="/python/space_invaders"
+      >
         <SpaceInvadersBox />
       </Link>
 
-      <Link className="" to="/python/image_editor">
+      <Link
+        className="block w-full flex justify-center"
+        to="/python/image_editor"
+      >
         <ImageEditorBox />
       </Link>
-      <Link className="" to="/python/backtracker">
+      <Link
+        className="block w-full flex justify-center"
+        to="/python/backtracker"
+      >
         <BacktrackerBox />
       </Link>
-      <Link className="" to="/python/snakegame">
+      <Link className="block w-full flex justify-center" to="/python/snakegame">
         <SnakeBox />
       </Link>
     </div>

@@ -10,7 +10,7 @@ function TopBar() {
     navigator.clipboard.writeText(email);
   };
   https: return (
-    <div className="lg:w-[500px] sm:w-[400px] w-[400px] font-light rounded-lg shadow shadow-black bg-[#111111] border-[1px] border-[#222224]">
+    <div className="lg:w-[500px] sm:w-[400px] w-[91%] font-light rounded-lg shadow shadow-black bg-[#111111] border-[1px] border-[#222224]">
       <div className="flex justify-center pt-2 text-xl text-white items-center  w-full h-2/5">
         <div className="flex flex-row">
           <div className="mx-6">Miguel Castillo</div>

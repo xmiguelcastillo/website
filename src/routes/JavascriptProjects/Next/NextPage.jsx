@@ -18,9 +18,10 @@ function NextPage() {
         href="https://soccer-kohl.vercel.app/Chelsea"
         target="_blank"
         rel="noopener noreferrer"
+        className="block w-full flex justify-center"
       >
         <div
-          className="w-[400px] h-[300px] lg:w-[600px] hover:shadow-black lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow hover:border-red-500 shadow-black border-[1px] border-[#222224] cursor-pointer"
+          className=" w-[91%] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
           style={{
             backgroundImage: `url(${soccerGif})`,
             backgroundSize: "120%",
