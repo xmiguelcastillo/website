@@ -1,6 +1,6 @@
 import React from "react";
 
-import JavaIcon from "../assets/javasvg";
+import JavaIcon from "../assets/javaIcon.jsx";
 import CIcon from "../assets/csvg";
 function CClasses() {
   return (

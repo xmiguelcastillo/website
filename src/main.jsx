@@ -27,6 +27,8 @@ import Calculator from "./routes/JavascriptProjects/Calculator/Calculator.jsx";
 import ImageEditorPage from "./routes/PythonProjects/ImageEditor/ImageEditorPage.jsx";
 import SpaceInvadersPage from "./routes/PythonProjects/SpaceInvaders/SpaceInvadersPage.jsx";
 import BacktrackerPage from "./routes/PythonProjects/Backtracker/BacktrackerPage.jsx";
+import JavaProjects from "./routes/JavaProjects.jsx";
+import MillenniumComicsPage from "./routes/JavaProjects/MillenniumComics/MillenniumComicsPage.jsx";
 
 function RootLayout() {
   return (
@@ -49,6 +51,8 @@ const router = createBrowserRouter([
       { path: "/miguel", element: <Miguel /> },
       { path: "/python", element: <PythonProjects /> },
       { path: "/javascript", element: <JavascriptProjects /> },
+        { path: "/java", element: <JavaProjects /> },
+        { path: "/java/millenniumcomics", element: <MillenniumComicsPage /> },
       { path: "/calculator", element: <Calculator /> },
       { path: "/javascript/pokedex", element: <PokedexPage /> },
       { path: "/javascript/maze", element: <MazePage /> },

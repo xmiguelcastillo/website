@@ -36,9 +36,7 @@ function JavascriptDisplay() {
           lg:h-[350px] h-[300px] overflow-hidden
         "
       >
-        {/* TOP 3D section */}
         <div className="relative w-full h-3/5 flex justify-center items-center">
-          {/* Radial Background */}
           <div
             className="absolute mt-[90px] flex items-center justify-center w-[200px] h-[100px] pointer-events-none"
             style={{
@@ -66,7 +64,6 @@ function JavascriptDisplay() {
           </Canvas>
         </div>
 
-        {/* BOTTOM INFO */}
         <div className="flex-col w-full h-1/5">
           <a
             href="https://xmiguelcastillo.github.io/pokedex/bulbasaur"
@@ -78,7 +75,6 @@ function JavascriptDisplay() {
           </a>
 
           <div className="flex w-full px-2 h-full justify-center font-normal items-center">
-            {/* BADGE LIST */}
             {[
               { Icon: JavascriptIcon, label: "Javascript" },
               { Icon: ReactIcon, label: "React" },

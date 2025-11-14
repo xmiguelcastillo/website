@@ -5,7 +5,7 @@ import ReactIcon from "../assets/reactsvg";
 import JavascriptIcon from "../assets/javascriptsvg";
 import SqlIcon from "../assets/sqlsvg";
 import CppIcon from "../assets/cppsvg";
-import JavaIcon from "../assets/javasvg";
+import JavaIcon from "../assets/javaIcon.jsx";
 import CsharpIcon from "../assets/csharpsvg";
 import NumpyIcon from "../assets/numpysvg";
 import MatplotIcon from "../assets/matplotsvg";

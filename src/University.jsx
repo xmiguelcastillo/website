@@ -6,7 +6,7 @@ import PythonIcon from "./assets/pythonsvg";
 import PythonClasses from "./components/PythonClasses";
 import MathIcon from "./assets/mathsvg";
 import MathClasses from "./components/MathClasses";
-import JavaIcon from "./assets/javasvg";
+import JavaIcon from "./assets/javaIcon.jsx";
 import JavaClasses from "./components/JavaClasses";
 import CIcon from "./assets/csvg";
 import CClasses from "./components/CClasses";

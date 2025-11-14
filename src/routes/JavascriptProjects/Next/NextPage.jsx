@@ -15,7 +15,7 @@ function NextPage() {
         Premier League Soccer
       </div>
       <a
-        href="https://soccer-kohl.vercel.app/Chelsea"
+        href="https://soccer-kohl.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         className="block w-full flex justify-center"

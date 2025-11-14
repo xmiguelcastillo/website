@@ -1,6 +1,6 @@
 import React from "react";
 
-import JavaIcon from "../assets/javasvg";
+import JavaIcon from "../assets/javaIcon.jsx";
 function JavaClasses() {
   return (
     <div className="flex flex-row flex-wrap  w-[400px] lg:w-[500px] sm:w-[400px] ">

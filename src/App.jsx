@@ -4,6 +4,7 @@ import TopBar from "./components/TopBar";
 import { Link } from "react-router-dom";
 import PythonDisplay from "./components/Languages/PythonDisplay";
 import JavascriptDisplay from "./components/Languages/JavascriptDisplay";
+import JavaDisplay from "./components/Languages/JavaDisplay.jsx";
 function App() {
   return (
     <div className="flex flex-col items-center bg-[#111111]">
@@ -18,6 +19,13 @@ function App() {
         <PythonDisplay />
       </Link>
 
+        <Link
+            to="/java"
+            className="block w-full flex justify-center"
+            aria-label="Go to Java Page"
+        >
+            <JavaDisplay />
+        </Link>
       <Link
         to="/javascript"
         className="block w-full flex justify-center"
@@ -25,16 +33,6 @@ function App() {
       >
         <JavascriptDisplay />
       </Link>
-      {/*
-      <L>pink to="/cpp" aria-label="Go to C++ page">
-          <CppDisplay />
-        </Link>
-        */}
-      {/*
-        <Link to="/csharp" aria-label="Go to C# page">
-          <CsharpDisplay />
-        </Link>
-        */}
     </div>
   );
 }
