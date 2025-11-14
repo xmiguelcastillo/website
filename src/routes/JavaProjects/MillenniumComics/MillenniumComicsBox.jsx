@@ -23,7 +23,7 @@ function MillenniumComicsBox() {
     const background = loading ? "rgba(0, 0, 0, 0.8)" : typeColors.Fire;
 
     return (
-        <div className="flex flex-col justify-center items-center min-w-full mb-3">
+        <div className="flex flex-col justify-center text-center items-center min-w-full mb-3">
             <div className="text-white flex justify-center mt-3">
                 Millennium Comics Springboot and Supabase(Postgres/Docker)
             </div>
@@ -63,7 +63,7 @@ function MillenniumComicsBox() {
                         href="https://xmiguelcastillo.github.io/pokedex/bulbasaur"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white font-normal flex justify-center items-center text-sm hover:underline"
+                        className="text-white font-normal text-center flex justify-center items-center text-sm hover:underline"
                     >
                         Millennium Comics Springboot and Supabase(Postgres/Docker)
                     </a>

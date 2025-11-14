@@ -63,7 +63,7 @@ function JavasDisplay() {
                         href="https://xmiguelcastillo.github.io/pokedex/bulbasaur"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white font-normal flex justify-center items-center text-sm hover:underline"
+                        className="text-white text-center font-normal flex justify-center items-center text-sm hover:underline"
                     >
                         Millennium Comics Springboot and Supabase(Postgres/Docker)
                     </a>
