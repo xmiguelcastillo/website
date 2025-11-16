@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from "react";
 import HeadingBar from "../../../components/HeadingBar";
-import mundoWorldVidGif from "../../assets/mundworldvid.gif";
 import PokedexCode from "./PokedexCode";
 import PokedexTools from "./PokedexTools";
-import pokemon from "../../assets/pokemon";
 import pokedex from "../../assets/Pokemon.gif";
 import PokedexSearch from "./PokedexSearch";
 import JavascriptCode from "../../../components/CodeBlock/JavascriptCode";
@@ -19,7 +16,7 @@ function PokedexPage() {
         href="https://xmiguelcastillo.github.io/pokedex/bulbasaur"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex block w-full  justify-center"
+        className="flex  w-full  justify-center"
       >
         <div
           className="w-[91%] h-[300px] lg:w-[600px] hover:shadow-black lg:h-[500px] sm:w-[400px] sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224] cursor-pointer"
@@ -34,7 +31,11 @@ function PokedexPage() {
 
       <PokedexTools />
       <PokedexSearch />
-      <JavascriptCode codeBlock={PokedexCode} filename="PokeNumber.jsx" />
+      <JavascriptCode
+        codeBlock={PokedexCode}
+        filename="PokeNumber.jsx"
+        webLink={"https://xmiguelcastillo.github.io/pokedex/bulbasaur"}
+      />
     </div>
   );
 }

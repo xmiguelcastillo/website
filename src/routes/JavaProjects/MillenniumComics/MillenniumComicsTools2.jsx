@@ -5,44 +5,44 @@ import ThreeIcon from "../../../assets/threesvg.jsx";
 import TailwindIcon from "../../../assets/tailwindIcon.jsx";
 
 function MillenniumComicsTools2() {
-    return (
-        <div className="flex justify-center items-center flex-row  lg:w-[600px] sm:w-[400px] w-[91%]">
-            <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
-                <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
-                    <JavascriptIcon />
-                </div>
-                <div className="w-2/3 flex font-normal justify-center sm:text-[14px] md:text-[15px] lg:text-[14px] items-center h-full">
-                    JavaScript
-                </div>
-            </div>
-
-            <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
-                <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
-                    <ReactIcon />
-                </div>
-                <div className="w-2/3 flex font-normal justify-center text-[15px] items-center h-full">
-                    React
-                </div>
-            </div>
-
-            <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
-                <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
-                    <TailwindIcon/>
-                </div>
-                <div className="w-2/3 flex font-normal justify-center text-[15px] mr-2 items-center h-full">
-                    Tailwind
-                </div>
-            </div>
-
-            <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
-                <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
-                    <ThreeIcon/>
-                </div>
-                <div className="w-2/3 flex font-normal justify-center sm:text-[12px] md:text-[15px] lg:text-[14px] mr-2 items-center h-full">
-                    Three Js
-                </div>
-            </div>
+  return (
+    <div className="flex justify-center items-center flex-row  lg:w-[600px] sm:w-[400px] w-[91%]">
+      <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+        <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
+          <JavascriptIcon />
         </div>
-    );
+        <div className="w-2/3 flex font-normal justify-center sm:text-[10px] md:text-[12px] lg:text-[12px] items-center h-full">
+          JavaScript
+        </div>
+      </div>
+
+      <div className="border-[.99px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+        <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
+          <ReactIcon />
+        </div>
+        <div className="w-2/3 flex font-normal justify-center text-[15px] items-center h-full">
+          React
+        </div>
+      </div>
+
+      <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+        <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md pl-2">
+          <TailwindIcon />
+        </div>
+        <div className="w-2/3 flex font-normal justify-center text-[13px] mr-2 items-center h-full">
+          Tailwind
+        </div>
+      </div>
+
+      <div className="border-[.05px] rounded-md border-[#3d3d42] mt-5 flex text-white bg-[#111111] w-28 h-9 text-xs mx-2">
+        <div className="w-1/3 flex justify-center text-black items-center h-full bg-[#111111] rounded-l-md">
+          <ThreeIcon />
+        </div>
+        <div className="w-2/3 flex font-normal justify-center sm:text-[12px] md:text-[15px] lg:text-[14px] mr-2 items-center h-full">
+          Three Js
+        </div>
+      </div>
+    </div>
+  );
 }
 export default MillenniumComicsTools2;

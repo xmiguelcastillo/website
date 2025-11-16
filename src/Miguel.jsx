@@ -16,7 +16,9 @@ function Miguel() {
 
       <div className="mt-3"></div>
       <PicIcon />
-      <div className="mt-3"></div>
+      <div className="mt-3">
+
+      </div>
 
       <div className="text-white flex justify-center mt-3">About Me</div>
 

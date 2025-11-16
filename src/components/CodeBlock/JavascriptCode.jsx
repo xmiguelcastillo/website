@@ -1,12 +1,13 @@
 import githubIcon from "../../assets/githubIcon.png";
 import reactIcon from "../../assets/reactIcon.svg";
 import copyIcon from "../../assets/copyIcon.png";
+import linkIcon from "../../assets/linkIcon.png";
 
 import React, { useEffect } from "react";
 
 import hljs from "highlight.js";
 import "highlight.js/styles/gradient-dark.css";
-function JavascriptCode({ codeBlock, link, filename, theme }) {
+function JavascriptCode({ codeBlock, link, filename, theme ,webLink}) {
   useEffect(() => {
     hljs.highlightAll();
   }, []);
@@ -22,17 +23,27 @@ function JavascriptCode({ codeBlock, link, filename, theme }) {
           <img className="w-[15px] h-[15px]" src={reactIcon} alt="React icon" />
         </div>
         <div className="ml-4">{filename}</div>
+
         <div className="flex ml-auto justify-center items-center">
+          <a href={webLink} target="_blank" rel="noreferrer">
+            <img
+              src={linkIcon}
+              className="w-[22px] h-[22px]"
+              alt="GitHub icon"
+            />
+          </a>
+        </div>
+        <div className="flex ml-2 justify-center  items-center">
           <a href={link} target="_blank" rel="noreferrer">
             <img
               src={githubIcon}
-              className="w-[24px] h-[24px]"
+              className="w-[18px] h-[18px]"
               alt="GitHub icon"
             />
           </a>
         </div>
         <button onClick={handleCopy} className="ml-2">
-          <img src={copyIcon} className="w-[12px] h-[15px]" alt="Copy icon" />
+          <img src={copyIcon} className="w-[18px] h-[18px]" alt="Copy icon" />
         </button>
       </div>
 

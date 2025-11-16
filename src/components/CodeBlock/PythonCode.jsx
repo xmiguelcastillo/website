@@ -20,7 +20,7 @@ function PythonCode({ codeBlock, link, filename }) {
       <div className="flex flex-row w-full px-4 py-2 text-white border-[#222224] border-b-[1px] rounded-t-lg">
         <div className="flex justify-center items-center">
           <img
-            className="w-[15px] h-[15px]"
+            className="w-[20px] h-[20px]"
             src={pythonIcon}
             alt="Python icon"
           />
@@ -30,13 +30,13 @@ function PythonCode({ codeBlock, link, filename }) {
           <a href={link} target="_blank" rel="noreferrer">
             <img
               src={githubIcon}
-              className="w-[24px] h-[24px]"
+              className="w-[20px] h-[20px]"
               alt="GitHub icon"
             />
           </a>
         </div>
         <button onClick={handleCopy} className="ml-2">
-          <img src={copyIcon} className="w-[12px] h-[15px]" alt="Copy icon" />
+          <img src={copyIcon} className="w-[18px] h-[18px]" alt="Copy icon" />
         </button>
       </div>
 

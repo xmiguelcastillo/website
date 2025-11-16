@@ -58,10 +58,11 @@ function Contact() {
 
         {formStatus && (
           <div
-            className={`p-4 mb-4 rounded-md text-center ${formStatus.success
+            className={`p-4 mb-4 rounded-md text-center ${
+              formStatus.success
                 ? "bg-green-200 text-green-800"
                 : "bg-red-200 text-red-800"
-              }`}
+            }`}
           >
             {formStatus.message}
           </div>
