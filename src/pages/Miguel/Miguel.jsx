@@ -25,10 +25,7 @@ export default function Miguel() {
         </div>
       </div>
 
-      <img
-        src="../../../public/nvim.jpg"
-        className="w-fit h-[300px] rounded-lg"
-      />
+      <img src="/nvim.jpg" className="w-fit h-[300px] rounded-lg" />
       <div className="w-full lg:w-[500px] w-[400px] sm:w-[400px] md:w-[500px] text-white">
         <h1 className="font-bold text-[20px] my-2">Leetcode</h1>
         <div className="flex flex-col border-gray-900 border-[1px] rounded-xl  h-[60px] w-full">
