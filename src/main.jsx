@@ -4,10 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 import App from "./App";
-import Resume from "./Resume";
-import University from "./University";
-import Contact from "./Contact";
-import Miguel from "./Miguel";
+import Miguel from "./pages/Miguel/Miguel.jsx";
 
 import PythonProjects from "./routes/PythonProjects";
 import JavascriptProjects from "./routes/JavascriptProjects";
@@ -29,6 +26,11 @@ import SpaceInvadersPage from "./routes/PythonProjects/SpaceInvaders/SpaceInvade
 import BacktrackerPage from "./routes/PythonProjects/Backtracker/BacktrackerPage.jsx";
 import JavaProjects from "./routes/JavaProjects.jsx";
 import MillenniumComicsPage from "./routes/JavaProjects/MillenniumComics/MillenniumComicsPage.jsx";
+import Resume from "./pages/Resume/Resume.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import University from "./pages/University/University.jsx";
+import Leetcode from "./pages/Miguel/Leetcode/Leetcode.jsx";
+import ProblemPage from "./pages/Miguel/Leetcode/ProblemPage.jsx";
 
 function RootLayout() {
   return (
@@ -49,10 +51,13 @@ const router = createBrowserRouter([
       { path: "/university", element: <University /> },
       { path: "/contact", element: <Contact /> },
       { path: "/miguel", element: <Miguel /> },
+      { path: "/miguel/leetcode", element: <Leetcode /> },
+      { path: "/miguel/leetcode/:problemId", element: <ProblemPage /> },
+
       { path: "/python", element: <PythonProjects /> },
       { path: "/javascript", element: <JavascriptProjects /> },
-        { path: "/java", element: <JavaProjects /> },
-        { path: "/java/millenniumcomics", element: <MillenniumComicsPage /> },
+      { path: "/java", element: <JavaProjects /> },
+      { path: "/java/millenniumcomics", element: <MillenniumComicsPage /> },
       { path: "/calculator", element: <Calculator /> },
       { path: "/javascript/pokedex", element: <PokedexPage /> },
       { path: "/javascript/maze", element: <MazePage /> },

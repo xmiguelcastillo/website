@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import pythonIcon from "../../assets/pythonIcon.svg";
 import githubIcon from "../../assets/githubIcon.png";
 import copyIcon from "../../assets/copyIcon.png";
@@ -6,7 +6,7 @@ import copyIcon from "../../assets/copyIcon.png";
 import hljs from "highlight.js";
 import "highlight.js/styles/gradient-dark.css";
 
-function PythonCode({ codeBlock, link, filename }) {
+function PythonCode({ codeBlock, link, filename, color }) {
   useEffect(() => {
     hljs.highlightAll();
   }, []);

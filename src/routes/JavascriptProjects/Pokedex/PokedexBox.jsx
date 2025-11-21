@@ -3,13 +3,13 @@ import JavascriptIcon from "../../../assets/javascriptsvg";
 import ReactIcon from "../../../assets/reactsvg";
 import ThreeIcon from "../../../assets/threesvg";
 import ApiIcon from "../../../assets/apisvg";
-import { Pikachu } from "../../../Pikachu";
 import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
   Environment,
   PerspectiveCamera,
 } from "@react-three/drei";
+import { Pikachu } from "../../../components/Pikachu";
 
 function PokedexBox() {
   const [loading] = useState(false);

@@ -5,8 +5,6 @@ import ThreeIcon from "../../../assets/threesvg";
 import ApiIcon from "../../../assets/apisvg";
 import PokedexImage from "../../assets/pokedex";
 
-import { Pikachu } from "../../../Pikachu";
-import { Bulbasaur } from "../../../components/Bulbasaur";
 import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
@@ -50,13 +48,6 @@ export default function SnakeGameBox() {
               fov={10.598}
               position={[450, 1, 1]}
               rotation={[0, 0, 0]}
-            />
-            <Pikachu
-              scale={[1, 1, 1]}
-              position={[10, -32, 0]}
-              rotation={[0, -Math.PI / 2, 0]}
-              castShadow
-              receiveShadow
             />
             <OrbitControls enableZoom={true} autoRotate={true} />
           </Canvas>

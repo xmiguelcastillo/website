@@ -14,21 +14,21 @@ function App() {
       <Link
         to="/python"
         aria-label="Go to Python page"
-        className="block w-full flex justify-center"
+        className=" w-full flex justify-center"
       >
         <PythonDisplay />
       </Link>
 
       <Link
         to="/java"
-        className="block w-full flex justify-center"
+        className=" w-full flex justify-center"
         aria-label="Go to Java Page"
       >
         <JavaDisplay />
       </Link>
       <Link
         to="/javascript"
-        className="block w-full flex justify-center"
+        className=" w-full flex justify-center"
         aria-label="Go to Javascript Page"
       >
         <JavascriptDisplay />
