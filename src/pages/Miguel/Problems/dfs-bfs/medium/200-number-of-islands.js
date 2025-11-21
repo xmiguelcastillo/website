@@ -25,6 +25,5 @@ class Solution:
                     bfs(r,c)
                     count += 1 
         return count 
-        
 `,
 };
