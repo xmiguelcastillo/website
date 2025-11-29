@@ -116,8 +116,8 @@ export default function MazeBoxy() {
   let randomR = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
   let randomG = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
   let randomB = Math.floor(Math.random() * (255 - 0 + 1)) + 1;
-  const maxWidth = 400;
-  const maxHeight = 300;
+  const maxWidth = 900;
+  const maxHeight = 400;
   const gapSize = 1;
 
   const totalHorizontalGap = (adjusted.width - 1) * gapSize;
@@ -131,7 +131,7 @@ export default function MazeBoxy() {
   const containerHeight = adjusted.height * cellSize + totalVerticalGap;
   return (
     <div
-      className="overflow-hidden flex  justify-center items-center"
+      className="overflow-hidden flex  justify-center items-center "
       style={{
         width: `${maxWidth}px`,
         height: `${maxHeight}px`,

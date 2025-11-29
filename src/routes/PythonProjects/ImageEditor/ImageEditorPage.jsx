@@ -68,7 +68,7 @@ function ImageEditorPage() {
 
         <h1 className="text-white my-3">Black and White Color Changer</h1>
         <div
-          className="w-[91%] h-[300px] lg:w-[600px] lg:h-[500px]  sm:h-[300px] mt-3 rounded-lg shadow shadow-black border-[1px] border-[#222224]"
+          className="w-[91%] h-[300px] lg:w-[600px] lg:h-[500px] sm:w-[400px] sm:h-[300px] rounded-lg shadow shadow-black border-[1px] border-[#222224]"
           style={{
             backgroundImage: preview ? `url(${preview})` : `url(${astroboy})`,
             backgroundSize: "cover",
