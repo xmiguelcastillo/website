@@ -6,8 +6,8 @@ import linkIcon from "../../assets/linkIcon.png";
 import React, { useEffect } from "react";
 
 import hljs from "highlight.js";
-import "highlight.js/styles/gradient-dark.css";
-function JavascriptCode({ codeBlock, link, filename, theme ,webLink}) {
+import "highlight.js/styles/magula.css";
+function JavascriptCode({ codeBlock, link, filename, theme, webLink }) {
   useEffect(() => {
     hljs.highlightAll();
   }, []);

@@ -4,7 +4,7 @@ import githubIcon from "../../assets/githubIcon.png";
 import copyIcon from "../../assets/copyIcon.png";
 
 import hljs from "highlight.js";
-import "highlight.js/styles/hybrid.css";
+import "highlight.js/styles/idea.css";
 
 function PythonCode({ codeBlock, link, filename, color }) {
   useEffect(() => {
