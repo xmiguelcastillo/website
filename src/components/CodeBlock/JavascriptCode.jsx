@@ -17,7 +17,7 @@ function JavascriptCode({ codeBlock, link, filename, theme, webLink }) {
   };
 
   return (
-    <div className="w-[91%] h-full lg:h-full lg:w-[500px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border-[1px] border-l-blue-500 border-[#222224] flex-col">
+    <div className="w-[91%] h-full lg:h-full lg:w-[600px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border-[1px] border-l-blue-500 border-[#222224] flex-col">
       <div className="flex flex-row w-full px-4 py-2 text-white border-[#222224] border-b-[1px] rounded-t-lg">
         <div className="flex justify-center items-center">
           <img className="w-[15px] h-[15px]" src={reactIcon} alt="React icon" />

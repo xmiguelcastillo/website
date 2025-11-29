@@ -16,7 +16,7 @@ function PythonCode({ codeBlock, link, filename, color }) {
   };
 
   return (
-    <div className="w-[91%] min-h-screen lg:w-[500px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border border-[#222224] border-l-blue-500 flex flex-col">
+    <div className="w-[91%] min-h-screen lg:w-[600px] sm:w-[400px] mt-3 rounded-lg shadow shadow-black border border-[#222224] border-l-blue-500 flex flex-col">
       <div className="flex flex-row w-full px-4 py-2 text-white border-[#222224] border-b rounded-t-lg">
         <div className="flex justify-center items-center">
           <img
