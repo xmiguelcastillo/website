@@ -1,7 +1,7 @@
 import HeadingBar from "../../components/HeadingBar";
 
 export default function Resume() {
-  const pdfUrl = "Miguel.pdf";
+  const pdfUrl = "Miguel2026.pdf";
 
   return (
     <div className="flex flex-col  items-center  min-h-screen">
